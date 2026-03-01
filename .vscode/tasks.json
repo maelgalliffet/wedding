@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run local preview",
+            "type": "shell",
+            "command": "./scripts/serve-local.sh",
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ]
+}

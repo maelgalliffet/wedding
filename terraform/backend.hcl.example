@@ -1,0 +1,10 @@
+# Copiez ce fichier en backend.hcl et adaptez les valeurs.
+# Utilisation:
+# terraform -chdir=terraform init -backend-config=backend.hcl -reconfigure
+
+bucket         = "my-terraform-state-bucket"
+key            = "wedding/prod/terraform.tfstate"
+region         = "eu-west-3"
+encrypt        = true
+# Optionnel mais recommandé:
+# dynamodb_table = "terraform-locks"

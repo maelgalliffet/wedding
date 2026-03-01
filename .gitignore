@@ -1,0 +1,7 @@
+# Terraform local artifacts
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+
+# Backend local config (may contain sensitive values)
+terraform/backend.hcl
