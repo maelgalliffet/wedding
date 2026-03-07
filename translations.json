@@ -1,0 +1,842 @@
+{
+    "nav.aria": [
+        {
+            "lang": "en",
+            "text": "Main navigation"
+        },
+        {
+            "lang": "fr",
+            "text": "Navigation principale"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "التنقل الرئيسي"
+        }
+    ],
+    "nav.details": [
+        {
+            "lang": "en",
+            "text": "Details"
+        },
+        {
+            "lang": "fr",
+            "text": "Détails"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "التفاصيل"
+        }
+    ],
+    "nav.program": [
+        {
+            "lang": "en",
+            "text": "Schedule"
+        },
+        {
+            "lang": "fr",
+            "text": "Programme"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "البرنامج"
+        }
+    ],
+    "nav.location": [
+        {
+            "lang": "en",
+            "text": "Location"
+        },
+        {
+            "lang": "fr",
+            "text": "Lieu"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "المكان"
+        }
+    ],
+    "nav.rsvp": [
+        {
+            "lang": "en",
+            "text": "Presence confirmation"
+        },
+        {
+            "lang": "fr",
+            "text": "Confirmation de présence"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تأكيد الحضور"
+        }
+    ],
+    "lang.aria": [
+        {
+            "lang": "en",
+            "text": "Change language"
+        },
+        {
+            "lang": "fr",
+            "text": "Changer la langue"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تغيير اللغة"
+        }
+    ],
+    "lang.label": [
+        {
+            "lang": "en",
+            "text": "Language"
+        },
+        {
+            "lang": "fr",
+            "text": "Langue"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "اللغة"
+        }
+    ],
+    "hero.eyebrow": [
+        {
+            "lang": "en",
+            "text": "You are warmly invited to the wedding of"
+        },
+        {
+            "lang": "fr",
+            "text": "Vous êtes cordialement invités au mariage de"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "يسعدنا دعوتكم لحضور زفاف"
+        }
+    ],
+    "hero.date": [
+        {
+            "lang": "en",
+            "text": "June 20, 2026"
+        },
+        {
+            "lang": "fr",
+            "text": "Le 20 juin 2026"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٢٠ يونيو ٢٠٢٦"
+        }
+    ],
+    "hero.place": [
+        {
+            "lang": "en",
+            "text": "Château des Comtes de Challes · Challes-les-Eaux · Savoie"
+        },
+        {
+            "lang": "fr",
+            "text": "Château des Comtes de Challes · Challes-les-Eaux · Savoie"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "Château des Comtes de Challes · شال ليزو · سافوا"
+        }
+    ],
+    "hero.cta": [
+        {
+            "lang": "en",
+            "text": "Discover"
+        },
+        {
+            "lang": "fr",
+            "text": "Découvrir"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "اكتشفوا"
+        }
+    ],
+    "hero.scrollAria": [
+        {
+            "lang": "en",
+            "text": "Scroll to details"
+        },
+        {
+            "lang": "fr",
+            "text": "Défiler vers les détails"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الانتقال إلى التفاصيل"
+        }
+    ],
+    "intro.aria": [
+        {
+            "lang": "en",
+            "text": "Introduction"
+        },
+        {
+            "lang": "fr",
+            "text": "Introduction"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "مقدمة"
+        }
+    ],
+    "intro.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Our story"
+        },
+        {
+            "lang": "fr",
+            "text": "Notre histoire"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "قصتنا"
+        }
+    ],
+    "intro.title": [
+        {
+            "lang": "en",
+            "text": "Two worlds, one promise"
+        },
+        {
+            "lang": "fr",
+            "text": "Deux univers, une seule promesse"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "عالمان ووعد واحد"
+        }
+    ],
+    "intro.text": [
+        {
+            "lang": "en",
+            "text": "Between the snowy peaks overlooking Savoie and the call of the sea that has always brought us together, we chose to celebrate our love where the mountains meet the sky — and to share this day with the people we hold most dear."
+        },
+        {
+            "lang": "fr",
+            "text": "Entre les sommets enneigés qui veillent sur la Savoie et l'appel du large qui nous a toujours réunis, nous avons choisi de célébrer notre amour là où la montagne rencontre le ciel — et d'y inviter les personnes qui nous sont les plus chères."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "بين القمم الثلجية التي تحرس سافوا ونداء البحر الذي جمعنا دائمًا، اخترنا أن نحتفل بحبنا حيث تلتقي الجبال بالسماء — وأن نشارك هذا اليوم مع أغلى الناس على قلوبنا."
+        }
+    ],
+    "details.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Information"
+        },
+        {
+            "lang": "fr",
+            "text": "Informations"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "معلومات"
+        }
+    ],
+    "details.title": [
+        {
+            "lang": "en",
+            "text": "The day at a glance"
+        },
+        {
+            "lang": "fr",
+            "text": "La journée en un coup d'œil"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "اليوم في لمحة"
+        }
+    ],
+    "details.date.title": [
+        {
+            "lang": "en",
+            "text": "Date"
+        },
+        {
+            "lang": "fr",
+            "text": "Date"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "التاريخ"
+        }
+    ],
+    "details.date.value": [
+        {
+            "lang": "en",
+            "text": "June 20, 2026"
+        },
+        {
+            "lang": "fr",
+            "text": "20 juin 2026"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٢٠ يونيو ٢٠٢٦"
+        }
+    ],
+    "details.date.sub": [
+        {
+            "lang": "en",
+            "text": "Saturday"
+        },
+        {
+            "lang": "fr",
+            "text": "Samedi"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "السبت"
+        }
+    ],
+    "details.time.title": [
+        {
+            "lang": "en",
+            "text": "Time"
+        },
+        {
+            "lang": "fr",
+            "text": "Heure"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الوقت"
+        }
+    ],
+    "details.time.value": [
+        {
+            "lang": "en",
+            "text": "3:00 PM"
+        },
+        {
+            "lang": "fr",
+            "text": "15h00"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٣:٠٠ مساءً"
+        }
+    ],
+    "details.time.sub": [
+        {
+            "lang": "en",
+            "text": "Outdoor ceremony"
+        },
+        {
+            "lang": "fr",
+            "text": "Cérémonie laïque"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "مراسم رمزية"
+        }
+    ],
+    "details.place.title": [
+        {
+            "lang": "en",
+            "text": "Venue"
+        },
+        {
+            "lang": "fr",
+            "text": "Lieu"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "المكان"
+        }
+    ],
+    "details.place.value": [
+        {
+            "lang": "en",
+            "text": "Château<br>des Comtes"
+        },
+        {
+            "lang": "fr",
+            "text": "Château<br>des Comtes"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "قصر<br>دي كومت"
+        }
+    ],
+    "details.place.sub": [
+        {
+            "lang": "en",
+            "text": "Challes-les-Eaux, Savoie"
+        },
+        {
+            "lang": "fr",
+            "text": "Challes-les-Eaux, Savoie"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "شال ليزو، سافوا"
+        }
+    ],
+    "details.dress.title": [
+        {
+            "lang": "en",
+            "text": "Dress code"
+        },
+        {
+            "lang": "fr",
+            "text": "Tenue"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الزي"
+        }
+    ],
+    "details.dress.value": [
+        {
+            "lang": "en",
+            "text": "Elegant"
+        },
+        {
+            "lang": "fr",
+            "text": "Élégante"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "أنيق"
+        }
+    ],
+    "details.dress.sub": [
+        {
+            "lang": "en",
+            "text": "Chic cocktail"
+        },
+        {
+            "lang": "fr",
+            "text": "Cocktail chic"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "كوكتيل شيك"
+        }
+    ],
+    "program.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Timeline"
+        },
+        {
+            "lang": "fr",
+            "text": "Déroulement"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "سير اليوم"
+        }
+    ],
+    "program.title": [
+        {
+            "lang": "en",
+            "text": "Wedding day schedule"
+        },
+        {
+            "lang": "fr",
+            "text": "Le programme du jour"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "برنامج يوم الزفاف"
+        }
+    ],
+    "program.item1.time": [
+        {
+            "lang": "en",
+            "text": "3:00 PM"
+        },
+        {
+            "lang": "fr",
+            "text": "15h00"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٣:٠٠ مساءً"
+        }
+    ],
+    "program.item1.label": [
+        {
+            "lang": "en",
+            "text": "Outdoor ceremony"
+        },
+        {
+            "lang": "fr",
+            "text": "Cérémonie laïque"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "المراسم"
+        }
+    ],
+    "program.item1.desc": [
+        {
+            "lang": "en",
+            "text": "Exchange of vows with views of the Granier and Nivollet peaks."
+        },
+        {
+            "lang": "fr",
+            "text": "Échanges des vœux face aux sommets du Granier et du Nivollet."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تبادل العهود مع إطلالة على قمم غرانييه ونيفوليه."
+        }
+    ],
+    "program.item2.time": [
+        {
+            "lang": "en",
+            "text": "4:30 PM"
+        },
+        {
+            "lang": "fr",
+            "text": "16h30"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٤:٣٠ مساءً"
+        }
+    ],
+    "program.item2.label": [
+        {
+            "lang": "en",
+            "text": "Cocktail hour"
+        },
+        {
+            "lang": "fr",
+            "text": "Vin d'honneur"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الاستقبال"
+        }
+    ],
+    "program.item2.desc": [
+        {
+            "lang": "en",
+            "text": "Reception in the château gardens with panoramic views."
+        },
+        {
+            "lang": "fr",
+            "text": "Cocktail dans les jardins du château, avec vue panoramique."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "كوكتيل في حدائق القصر مع منظر بانورامي."
+        }
+    ],
+    "program.item3.time": [
+        {
+            "lang": "en",
+            "text": "7:30 PM"
+        },
+        {
+            "lang": "fr",
+            "text": "19h30"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٧:٣٠ مساءً"
+        }
+    ],
+    "program.item3.label": [
+        {
+            "lang": "en",
+            "text": "Gala dinner"
+        },
+        {
+            "lang": "fr",
+            "text": "Dîner de gala"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "العشاء"
+        }
+    ],
+    "program.item3.desc": [
+        {
+            "lang": "en",
+            "text": "Gourmet dinner in the château's grand hall."
+        },
+        {
+            "lang": "fr",
+            "text": "Repas gastronomique dans la grande salle du château."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "عشاء فاخر في القاعة الكبرى بالقصر."
+        }
+    ],
+    "program.item4.time": [
+        {
+            "lang": "en",
+            "text": "10:00 PM"
+        },
+        {
+            "lang": "fr",
+            "text": "22h00"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "١٠:٠٠ مساءً"
+        }
+    ],
+    "program.item4.label": [
+        {
+            "lang": "en",
+            "text": "Dancing party"
+        },
+        {
+            "lang": "fr",
+            "text": "Soirée dansante"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "السهرة"
+        }
+    ],
+    "program.item4.desc": [
+        {
+            "lang": "en",
+            "text": "The celebration continues into the night."
+        },
+        {
+            "lang": "fr",
+            "text": "La fête continue jusqu'au bout de la nuit."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الاحتفال مستمر حتى آخر الليل."
+        }
+    ],
+    "location.eyebrow": [
+        {
+            "lang": "en",
+            "text": "The venue"
+        },
+        {
+            "lang": "fr",
+            "text": "Le lieu"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "المكان"
+        }
+    ],
+    "location.title": [
+        {
+            "lang": "en",
+            "text": "Château des Comtes<br>de Challes"
+        },
+        {
+            "lang": "fr",
+            "text": "Château des Comtes<br>de Challes"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "Château des Comtes<br>de Challes"
+        }
+    ],
+    "location.address": [
+        {
+            "lang": "en",
+            "text": "247 Montée du Château<br>73190 Challes-les-Eaux<br>Savoie, France"
+        },
+        {
+            "lang": "fr",
+            "text": "247 Montée du Château<br>73190 Challes-les-Eaux<br>Savoie, France"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "247 Montée du Château<br>73190 Challes-les-Eaux<br>Savoie, France"
+        }
+    ],
+    "location.desc": [
+        {
+            "lang": "en",
+            "text": "Nestled above Challes-les-Eaux, this 19th-century château offers breathtaking views of the Granier and Nivollet mountain ranges. A remarkable setting where timeless stone elegance meets the majesty of the Alps."
+        },
+        {
+            "lang": "fr",
+            "text": "Niché sur les hauteurs de Challes-les-Eaux, ce château du XIXe siècle offre une vue imprenable sur le massif du Granier et le Nivollet. Un cadre d'exception où l'élégance de la pierre se marie à la majesté des Alpes."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "يقع هذا القصر من القرن التاسع عشر على مرتفعات شال ليزو، ويوفر إطلالة ساحرة على جبال غرانييه ونيفوليه. مكان استثنائي يجمع بين أناقة الحجر وعظمة جبال الألب."
+        }
+    ],
+    "location.mapAria": [
+        {
+            "lang": "en",
+            "text": "Venue map"
+        },
+        {
+            "lang": "fr",
+            "text": "Carte du lieu"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "خريطة المكان"
+        }
+    ],
+    "location.mapText": [
+        {
+            "lang": "en",
+            "text": "Challes-les-Eaux - Savoie"
+        },
+        {
+            "lang": "fr",
+            "text": "Challes-les-Eaux - Savoie"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "شال ليزو - سافوا"
+        }
+    ],
+    "location.mapLink": [
+        {
+            "lang": "en",
+            "text": "Open in Google Maps ↗"
+        },
+        {
+            "lang": "fr",
+            "text": "Ouvrir dans Google Maps ↗"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "افتح في خرائط جوجل ↗"
+        }
+    ],
+    "rsvp.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Confirm your attendance"
+        },
+        {
+            "lang": "fr",
+            "text": "Confirmez votre présence"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "أكدوا حضوركم"
+        }
+    ],
+    "rsvp.title": [
+        {
+            "lang": "en",
+            "text": "Join us!"
+        },
+        {
+            "lang": "fr",
+            "text": "Rejoignez-nous !"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "ننتظركم!"
+        }
+    ],
+    "rsvp.intro": [
+        {
+            "lang": "en",
+            "text": "Your presence would mean so much to us. Please confirm your attendance before <strong>March 31, 2026</strong> by filling out the form below."
+        },
+        {
+            "lang": "fr",
+            "text": "Votre présence nous comblerait de joie. Merci de confirmer votre participation avant le <strong>31 mars 2026</strong> en remplissant le formulaire ci-dessous."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "وجودكم يسعدنا جدًا. من فضلكم أكدوا حضوركم قبل <strong>٣١ مارس ٢٠٢٦</strong> من خلال تعبئة النموذج التالي."
+        }
+    ],
+    "rsvp.deadline": [
+        {
+            "lang": "en",
+            "text": "RSVP deadline · March 31, 2026"
+        },
+        {
+            "lang": "fr",
+            "text": "Date limite de réponse · 31 mars 2026"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "آخر موعد للتأكيد · ٣١ مارس ٢٠٢٦"
+        }
+    ],
+    "rsvp.button": [
+        {
+            "lang": "en",
+            "text": "Confirm my attendance"
+        },
+        {
+            "lang": "fr",
+            "text": "Confirmer ma présence"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تأكيد الحضور"
+        }
+    ],
+    "rsvp.buttonAria": [
+        {
+            "lang": "en",
+            "text": "Confirm my attendance through the online form"
+        },
+        {
+            "lang": "fr",
+            "text": "Confirmer ma présence via le formulaire en ligne"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تأكيد الحضور عبر النموذج الإلكتروني"
+        }
+    ],
+    "footer.line": [
+        {
+            "lang": "en",
+            "text": "June 20, 2026 · Challes-les-Eaux · Savoie"
+        },
+        {
+            "lang": "fr",
+            "text": "20 juin 2026 · Challes-les-Eaux · Savoie"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "٢٠ يونيو ٢٠٢٦ · شال ليزو · سافوا"
+        }
+    ],
+    "title": [
+        {
+            "lang": "en",
+            "text": "Salma & Maël · June 20, 2026"
+        },
+        {
+            "lang": "fr",
+            "text": "Salma & Maël · 20 juin 2026"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "سلمى و مائل · ٢٠ يونيو ٢٠٢٦"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "text": "Salma & Maël — Wedding on June 20, 2026 at Château des Comtes de Challes, Challes-les-Eaux, Savoie."
+        },
+        {
+            "lang": "fr",
+            "text": "Salma & Maël — Mariage le 20 juin 2026 au Château des Comtes de Challes, Challes-les-Eaux, Savoie."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "سلمى و مائل — حفل الزفاف يوم ٢٠ يونيو ٢٠٢٦"
+        }
+    ]
+}

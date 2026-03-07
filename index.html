@@ -20,6 +20,13 @@
 
 <body>
 
+  <div class="site-background" aria-hidden="true">
+    <div class="bg-layer bg-mountains"></div>
+    <div class="bg-layer bg-sea"></div>
+    <div class="bg-layer bg-beach"></div>
+    <div class="bg-shade"></div>
+  </div>
+
   <!-- ── Navigation ──────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.aria">
     <span class="nav-logo">S&nbsp;&amp;&nbsp;M</span>
@@ -115,99 +122,13 @@
       <a href="#details" class="hero-scroll" aria-label="Défiler vers les détails"
         data-i18n-attr="aria-label:hero.scrollAria">
         <span data-i18n="hero.cta">Découvrir</span>
-        <span class="hero-scroll-line" aria-hidden="true"></span>
       </a>
     </div>
 
   </header>
 
-  <!-- ── Symbols band ─────────────────────────────────── -->
-  <div class="symbols-band" aria-hidden="true">
-    <div class="symbols-inner">
-
-      <!-- Wave -->
-      <span class="sym-item">
-        <svg viewBox="0 0 32 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M2,10 C6,4 10,4 16,10 C22,16 26,16 30,10" />
-          <path d="M2,16 C6,10 10,10 16,16 C22,22 26,22 30,16" opacity="0.5" />
-        </svg>
-      </span>
-
-      <!-- Mountain -->
-      <span class="sym-item">
-        <svg viewBox="0 0 32 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="16,2 2,22 30,22" />
-          <polygon points="16,2 13,9 19,9" fill="white" opacity="0.8" />
-        </svg>
-      </span>
-
-      <!-- Shell -->
-      <span class="sym-item">
-        <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M14,3 C7,3 2,8 2,14 C2,20 7,25 14,25 C20,25 25,20 25,14 C25,8 20,3 14,3 Z" />
-          <line x1="14" y1="3" x2="14" y2="25" />
-          <line x1="4" y1="9" x2="24" y2="19" />
-          <line x1="4" y1="19" x2="24" y2="9" />
-        </svg>
-      </span>
-
-      <!-- Pine tree -->
-      <span class="sym-item">
-        <svg viewBox="0 0 24 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="12,2 3,14 9,14 4,24 11,24 11,30 13,30 13,24 20,24 15,14 21,14" />
-        </svg>
-      </span>
-
-      <!-- Boat / sailboat -->
-      <span class="sym-item">
-        <svg viewBox="0 0 28 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4,14 L14,3 L14,14 Z" opacity="0.85" />
-          <path d="M2,15 Q14,21 26,15 L22,19 Q14,23 6,19 Z" />
-          <line x1="14" y1="3" x2="14" y2="14" stroke="currentColor" stroke-width="1.2" fill="none" />
-        </svg>
-      </span>
-
-      <!-- Pine cone -->
-      <span class="sym-item">
-        <svg viewBox="0 0 20 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="10" cy="16" rx="7" ry="11" />
-          <path d="M3,11 Q10,7 17,11" fill="none" stroke="white" stroke-width="1.2" opacity="0.6" />
-          <path d="M3,16 Q10,12 17,16" fill="none" stroke="white" stroke-width="1.2" opacity="0.6" />
-          <path d="M3,21 Q10,17 17,21" fill="none" stroke="white" stroke-width="1.2" opacity="0.6" />
-          <rect x="8" y="2" width="4" height="5" rx="1" />
-        </svg>
-      </span>
-
-      <!-- Ski -->
-      <span class="sym-item">
-        <svg viewBox="0 0 32 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M2,8 L24,8 Q30,8 30,4" />
-          <path d="M6,10 L26,10 Q32,10 32,6" opacity="0.4" />
-        </svg>
-      </span>
-
-      <!-- Sand / hourglass representing beach -->
-      <span class="sym-item">
-        <svg viewBox="0 0 24 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <!-- Seashell/sand star -->
-          <circle cx="12" cy="15" r="5" />
-          <ellipse cx="12" cy="6" rx="2" ry="4" transform="rotate(0 12 15)" />
-          <ellipse cx="12" cy="6" rx="2" ry="4" transform="rotate(60 12 15)" />
-          <ellipse cx="12" cy="6" rx="2" ry="4" transform="rotate(120 12 15)" />
-          <ellipse cx="12" cy="6" rx="2" ry="4" transform="rotate(180 12 15)" />
-          <ellipse cx="12" cy="6" rx="2" ry="4" transform="rotate(240 12 15)" />
-          <ellipse cx="12" cy="6" rx="2" ry="4" transform="rotate(300 12 15)" />
-        </svg>
-      </span>
-
-    </div>
-  </div>
-
   <!-- ── Intro ─────────────────────────────────────────── -->
-  <section class="section" aria-label="Introduction" data-i18n-attr="aria-label:intro.aria">
+  <section class="section section--intro" aria-label="Introduction" data-i18n-attr="aria-label:intro.aria">
     <div class="section-header fade-up">
       <p class="eyebrow" data-i18n="intro.eyebrow">Notre histoire</p>
       <h2 class="section-title" data-i18n="intro.title">Deux univers, une seule promesse</h2>
@@ -357,56 +278,47 @@
   </section>
 
   <!-- ── Lieu ───────────────────────────────────────────── -->
-  <section id="lieu" class="section section--full-bleed section--location" aria-labelledby="lieu-title">
-    <div class="section-inner">
-      <div class="location-block">
+  <section id="lieu" class="section section--location" aria-labelledby="lieu-title">
+    <div class="location-block">
 
-        <div class="location-text fade-up">
-          <p class="eyebrow" data-i18n="location.eyebrow">Le lieu</p>
-          <h2 id="lieu-title" class="location-title" data-i18n-html="location.title">Château des Comtes<br>de Challes
-          </h2>
-          <address class="location-address" data-i18n-html="location.address">
-            247 Montée du Château<br>
-            73190 Challes-les-Eaux<br>
-            Savoie, France
-          </address>
-          <p class="location-desc" data-i18n="location.desc">
-            Niché sur les hauteurs de Challes-les-Eaux, ce château du XIXe siècle offre une vue imprenable sur le massif
-            du Granier et le Nivollet. Un cadre d'exception où l'élégance de la pierre se marie à la majesté des Alpes.
-          </p>
-        </div>
-
-        <div class="location-map fade-up" aria-label="Carte du lieu" data-i18n-attr="aria-label:location.mapAria">
-          <div class="location-map-placeholder">
-            <!-- Mountain & location illustration -->
-            <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <polygon points="40,5 10,50 70,50" fill="#2F4166" opacity="0.25" />
-              <polygon points="40,5 34,22 46,22" fill="white" opacity="0.5" />
-              <polygon points="58,15 38,50 78,50" fill="#447FB0" opacity="0.2" />
-              <circle cx="40" cy="38" r="5" fill="#8B5E3C" opacity="0.6" />
-              <path d="M40,33 L40,43 M36,38 L44,38" stroke="#8B5E3C" stroke-width="2" opacity="0.8" />
-            </svg>
-            <p data-i18n="location.mapText">Challes-les-Eaux · Savoie</p>
-            <a href="https://maps.google.com/?q=Chateau+des+Comtes+de+Challes+73190" target="_blank"
-              rel="noopener noreferrer" class="location-map-link">
-              <span data-i18n="location.mapLink">Ouvrir dans Google Maps ↗</span>
-            </a>
-          </div>
-        </div>
-
+      <div class="location-text fade-up">
+        <p class="eyebrow" data-i18n="location.eyebrow">Le lieu</p>
+        <h2 id="lieu-title" class="location-title" data-i18n-html="location.title">Château des Comtes<br>de Challes
+        </h2>
+        <address class="location-address" data-i18n-html="location.address">
+          247 Montée du Château<br>
+          73190 Challes-les-Eaux<br>
+          Savoie, France
+        </address>
+        <p class="location-desc" data-i18n="location.desc">
+          Niché sur les hauteurs de Challes-les-Eaux, ce château du XIXe siècle offre une vue imprenable sur le massif
+          du Granier et le Nivollet. Un cadre d'exception où l'élégance de la pierre se marie à la majesté des Alpes.
+        </p>
       </div>
+
+      <div class="location-map fade-up" aria-label="Carte du lieu" data-i18n-attr="aria-label:location.mapAria">
+        <div class="location-map-placeholder">
+          <!-- Mountain & location illustration -->
+          <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="40,5 10,50 70,50" fill="#2F4166" opacity="0.25" />
+            <polygon points="40,5 34,22 46,22" fill="white" opacity="0.5" />
+            <polygon points="58,15 38,50 78,50" fill="#447FB0" opacity="0.2" />
+            <circle cx="40" cy="38" r="5" fill="#8B5E3C" opacity="0.6" />
+            <path d="M40,33 L40,43 M36,38 L44,38" stroke="#8B5E3C" stroke-width="2" opacity="0.8" />
+          </svg>
+          <p data-i18n-html="location.mapText">Challes-les-Eaux<br>Savoie</p>
+          <a href="https://maps.google.com/?q=Chateau+des+Comtes+de+Challes+73190" target="_blank"
+            rel="noopener noreferrer" class="location-map-link">
+            <span data-i18n="location.mapLink">Ouvrir dans Google Maps ↗</span>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ── RSVP ───────────────────────────────────────────── -->
   <section id="rsvp" class="rsvp-section" aria-labelledby="rsvp-title">
-
-    <!-- Decorative wave top -->
-    <div aria-hidden="true" class="rsvp-wave rsvp-wave--top">
-      <svg viewBox="0 0 1200 40" fill="var(--sky)" preserveAspectRatio="none" class="rsvp-wave-svg">
-        <path d="M0,20 C200,40 400,0 600,20 C800,40 1000,0 1200,20 L1200,0 L0,0 Z" />
-      </svg>
-    </div>
 
     <div class="fade-up">
       <p class="eyebrow" data-i18n="rsvp.eyebrow">Confirmez votre présence</p>
@@ -423,26 +335,13 @@
         Remplacez le href ci-dessous par votre lien Google Form réel.
         Exemple : https://forms.gle/XXXXXXXXXXXXXXXX
       -->
-      <a href="https://forms.gle/XXXXXXXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="rsvp-btn"
+      <a href="https://forms.gle/Nprychy3yCCdcuF78" target="_blank" rel="noopener noreferrer" class="rsvp-btn"
         aria-label="Confirmer ma présence via le formulaire en ligne" data-i18n-attr="aria-label:rsvp.buttonAria">
         <span data-i18n="rsvp.button">Confirmer ma présence</span>
       </a>
     </div>
 
-    <!-- Decorative wave bottom -->
-    <div aria-hidden="true" class="rsvp-wave rsvp-wave--bottom">
-      <svg viewBox="0 0 1200 40" fill="var(--sky)" preserveAspectRatio="none" class="rsvp-wave-svg">
-        <path d="M0,20 C200,0 400,40 600,20 C800,0 1000,40 1200,20 L1200,40 L0,40 Z" />
-      </svg>
-    </div>
-
   </section>
-
-  <!-- ── Footer ──────────────────────────────────────────── -->
-  <footer class="footer" role="contentinfo">
-    <p class="footer-names">Salma &amp; Maël</p>
-    <p data-i18n="footer.line">20 juin 2026 · Challes-les-Eaux · Savoie</p>
-  </footer>
 
   <!-- ── Scroll animation ─────────────────────────────────── -->
   <script src="app.js"></script>
