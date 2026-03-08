@@ -220,7 +220,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "بين القمم الشامخة في الـسافوا والسواحل المشرقة في الإسكندرية، يمتدّ عالمان بدا كل شيء أنه يفرقهما. الجبل والبحر يبدوان بعيدين…<br/><br/>ومع ذلك، كما يلتقي نهر الرون ونهر النيل في النهاية بالبحر الأبيض المتوسط، اجتمعت طرقنا معًا.<br/><br/>.إنّ هذا اللقاء النادر والثمين هو ما يسعدنا أن نحتفل "
+            "text": "بين القمم الشامخة في الـسافوا والسواحل المشرقة في الإسكندرية، يمتدّ عالمان بدا كل شيء أنه يفرقهما. الجبل والبحر يبدوان بعيدين…<br/><br/>ومع ذلك، كما يلتقي نهر الرون ونهر النيل في النهاية بالبحر الأبيض المتوسط، اجتمعت طرقنا معًا.<br/><br/>إنّ هذا اللقاء النادر والثمين هو ما يسعدنا أن نحتفل به معكم."
         }
     ],
     "details.eyebrow": [
@@ -234,13 +234,13 @@
         },
         {
             "lang": "ar-EG",
-            "text": "معلومات"
+            "text": "التفاصيل"
         }
     ],
     "details.title": [
         {
             "lang": "en",
-            "text": "The day at a glance"
+            "text": "To remember for the big day"
         },
         {
             "lang": "fr",
@@ -248,7 +248,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "اليوم في لمحة"
+            "text": "ما يجب تذكره ليوم الزفاف"
         }
     ],
     "details.date.title": [
@@ -324,7 +324,7 @@
     "details.time.sub": [
         {
             "lang": "en",
-            "text": "Outdoor ceremony"
+            "text": "Wedding ceremony"
         },
         {
             "lang": "fr",
@@ -332,7 +332,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "مراسم رمزية"
+            "text": "مراسم الزفاف"
         }
     ],
     "details.place.title": [
@@ -374,7 +374,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "شال ليزو، سافوا"
+            "text": "Challes-les-Eaux, Savoie"
         }
     ],
     "details.dress.title": [
@@ -388,7 +388,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "الزي"
+            "text": "Dress code"
         }
     ],
     "details.dress.value": [
@@ -450,7 +450,7 @@
     "details.ladies.sub": [
         {
             "lang": "en",
-            "text": "Forbidden :"
+            "text": "Bright colors preferred<br/><br/>Colors not allowed"
         },
         {
             "lang": "fr",
@@ -458,7 +458,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "ممنوع :"
+            "text": "الألوان الزاهية مرغوبة<br/><br/>الألوان الممنوعة"
         }
     ],
     "details.gentlemen.title": [
@@ -478,7 +478,7 @@
     "details.gentlemen.sub": [
         {
             "lang": "en",
-            "text": "Any color"
+            "text": "Free choice of color"
         },
         {
             "lang": "fr",
@@ -500,7 +500,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "البدلة موصى بها"
+            "text": "بدلة"
         }
     ],
     "program.eyebrow": [
@@ -520,7 +520,7 @@
     "program.title": [
         {
             "lang": "en",
-            "text": "Wedding day schedule"
+            "text": "The day at a glance"
         },
         {
             "lang": "fr",
@@ -548,7 +548,7 @@
     "program.item1.label": [
         {
             "lang": "en",
-            "text": "Outdoor ceremony"
+            "text": "Wedding ceremony"
         },
         {
             "lang": "fr",
@@ -556,7 +556,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "المراسم"
+            "text": "مراسم الزفاف"
         }
     ],
     "program.item1.desc": [
@@ -570,7 +570,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "تبادل العهود مع إطلالة على قمم غرانييه ونيفوليه."
+            "text": "تبادل العهود مع إطلالة على قمم الغرانييه والنيفوليه."
         }
     ],
     "program.item2.time": [
@@ -590,7 +590,7 @@
     "program.item2.label": [
         {
             "lang": "en",
-            "text": "Cocktail hour"
+            "text": "Cocktail reception"
         },
         {
             "lang": "fr",
@@ -598,13 +598,13 @@
         },
         {
             "lang": "ar-EG",
-            "text": "الاستقبال"
+            "text": "حفلة الاستقبال"
         }
     ],
     "program.item2.desc": [
         {
             "lang": "en",
-            "text": "Reception in the château gardens with panoramic views."
+            "text": "Cocktail in the château gardens, with panoramic views."
         },
         {
             "lang": "fr",
@@ -612,7 +612,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "كوكتيل في حدائق القصر مع منظر بانورامي."
+            "text": "كوكتيل في حدائق القصر مع إطلالة بانورامية."
         }
     ],
     "program.item3.time": [
@@ -674,7 +674,7 @@
     "program.item4.label": [
         {
             "lang": "en",
-            "text": "Dancing party"
+            "text": "First dance"
         },
         {
             "lang": "fr",
@@ -682,13 +682,13 @@
         },
         {
             "lang": "ar-EG",
-            "text": "السهرة"
+            "text": "افتتاح السهرة"
         }
     ],
     "program.item4.desc": [
         {
             "lang": "en",
-            "text": "The celebration continues into the night."
+            "text": "The celebration continues until the end of the night."
         },
         {
             "lang": "fr",
@@ -744,7 +744,7 @@
     "location.desc": [
         {
             "lang": "en",
-            "text": "Nestled above Challes-les-Eaux, this 19th-century château offers breathtaking views of the Granier and Nivollet mountain ranges. A remarkable setting where timeless stone elegance meets the majesty of the Alps."
+            "text": "Nestled on the heights of Challes-les-Eaux, this 15th-century castle with its medieval towers offers breathtaking views of the Granier and Nivollet mountain ranges. An exceptional setting where the elegance of stone blends with the majesty of the Alps."
         },
         {
             "lang": "fr",
@@ -752,7 +752,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "يقع هذا القصر من القرن التاسع عشر على مرتفعات شال ليزو، ويوفر إطلالة ساحرة على جبال غرانييه ونيفوليه. مكان استثنائي يجمع بين أناقة الحجر وعظمة جبال الألب."
+            "text": "يقع هذا القصر من القرن الخامس عشر على مرتفعات Challes-les-Eaux، ويوفر إطلالة ساحرة على جبال الغرانييه والنيفوليه. مكان استثنائي يجمع بين أناقة الحجر وعظمة جبال الألب."
         }
     ],
     "location.mapAria": [
@@ -780,7 +780,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "شال ليزو - سافوا"
+            "text": "Challes-les-Eaux - Savoie"
         }
     ],
     "location.mapLink": [
@@ -850,7 +850,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "آخر موعد للتأكيد · ٣١ مارس ٢٠٢٦"
+            "text": "آخر موعد للتأكيد · ٣٠ أبريل ٢٠٢٦"
         }
     ],
     "rsvp.button": [
@@ -892,7 +892,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "٢٠ يونيو ٢٠٢٦ · شال ليزو · سافوا"
+            "text": "20 juin 2026 · Challes-les-Eaux · Savoie"ا"
         }
     ],
     "title": [
@@ -906,7 +906,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "سلمى و مائل · ٢٠ يونيو ٢٠٢٦"
+            "text": "Salma & Maël · ٢٠ يونيو ٢٠٢٦"
         }
     ],
     "description": [
@@ -920,7 +920,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "سلمى و مائل — حفل الزفاف يوم ٢٠ يونيو ٢٠٢٦"
+            "text": "Salma & Maël — حفل الزفاف يوم ٢٠ يونيو ٢٠٢٦"
         }
     ]
 }
