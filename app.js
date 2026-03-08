@@ -118,8 +118,11 @@
 (function () {
     'use strict';
     var STORAGE_KEY = 'wedding-language';
+    var RSVP_FORM_FR = 'https://forms.gle/Nprychy3yCCdcuF78';
+    var RSVP_FORM_INTL = 'https://forms.gle/4tUC8mPCWoZgWtvT6';
     var selector = document.getElementById('lang-switcher');
     var flagButtons = document.querySelectorAll('.nav-flag-btn[data-lang]');
+    var rsvpButton = document.querySelector('.rsvp-btn');
     if (!selector) return;
 
     var dictionary = null;
@@ -136,6 +139,10 @@
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar-EG' ? 'rtl' : 'ltr';
         document.body.classList.toggle('lang-ar', lang === 'ar-EG');
+
+        if (rsvpButton) {
+            rsvpButton.setAttribute('href', lang === 'fr' ? RSVP_FORM_FR : RSVP_FORM_INTL);
+        }
 
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
             var key = el.getAttribute('data-i18n');
