@@ -83,6 +83,7 @@
     'use strict';
     var STORAGE_KEY = 'wedding-language';
     var selector = document.getElementById('lang-switcher');
+    var flagButtons = document.querySelectorAll('.nav-flag-btn[data-lang]');
     if (!selector) return;
 
     var dictionary = null;
@@ -126,6 +127,12 @@
     function initializeLanguage() {
         if (!dictionary) return;
 
+        function syncFlagState(lang) {
+            flagButtons.forEach(function (btn) {
+                btn.classList.toggle('is-active', btn.getAttribute('data-lang') === lang);
+            });
+        }
+
         var stored = localStorage.getItem(STORAGE_KEY);
         var param = new URLSearchParams(location.search).get('lang');
         var browser = navigator.language.split('-')[0];
@@ -134,15 +141,26 @@
         if (dictionary[initial]) {
             translate(initial);
             selector.value = initial;
+            syncFlagState(initial);
         }
 
         selector.addEventListener('change', function () {
             var lang = this.value;
             translate(lang);
+            syncFlagState(lang);
             localStorage.setItem(STORAGE_KEY, lang);
             var url = new URL(location);
             url.searchParams.set('lang', lang);
             history.replaceState(null, '', url);
+        });
+
+        flagButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var lang = btn.getAttribute('data-lang');
+                if (!dictionary[lang]) return;
+                selector.value = lang;
+                selector.dispatchEvent(new Event('change', { bubbles: true }));
+            });
         });
     }
 
