@@ -828,11 +828,11 @@
     "rsvp.intro": [
         {
             "lang": "en",
-            "text": "Your presence would mean so much to us. Please confirm your attendance before <strong>March 31, 2026</strong> by filling out the form below."
+            "text": "Your presence would mean so much to us. Please confirm your attendance before <strong>April 30, 2026</strong> by filling out the form below."
         },
         {
             "lang": "fr",
-            "text": "Votre présence nous comblerait de joie. Merci de confirmer votre participation avant le <strong>31 mars 2026</strong> en remplissant le formulaire ci-dessous."
+            "text": "Votre présence nous comblerait de joie. Merci de confirmer votre participation avant le <strong>30 avril 2026</strong> en remplissant le formulaire ci-dessous."
         },
         {
             "lang": "ar-EG",
@@ -842,11 +842,11 @@
     "rsvp.deadline": [
         {
             "lang": "en",
-            "text": "RSVP deadline · March 31, 2026"
+            "text": "RSVP deadline · April 30, 2026"
         },
         {
             "lang": "fr",
-            "text": "Date limite de réponse · 31 mars 2026"
+            "text": "Date limite de réponse · 30 avril 2026"
         },
         {
             "lang": "ar-EG",
