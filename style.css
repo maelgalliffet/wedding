@@ -1092,7 +1092,10 @@ body.lang-ar .timeline-item::before {
   }
 
   .nav-brand {
-    justify-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-self: auto;
   }
 
   .nav-controls {
