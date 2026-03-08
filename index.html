@@ -29,25 +29,23 @@
 
   <!-- ── Navigation ──────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.aria">
-    <span class="nav-logo">S&nbsp;&amp;&nbsp;M</span>
-    <ul class="nav-links">
-      <li class="nav-item-eg">
-        <button type="button" class="nav-inline-flag nav-flag-btn nav-flag-eg" data-lang="ar-EG"
-          aria-label="Passer en arabe"></button>
-        <a href="#details" data-i18n="nav.details">Détails</a>
-      </li>
-      <li><a href="#programme" data-i18n="nav.program">Programme</a></li>
-      <li><a href="#lieu" data-i18n="nav.location">Lieu</a></li>
-      <li class="nav-item-fr">
-        <a href="#rsvp" data-i18n="nav.rsvp">RSVP</a>
-        <button type="button" class="nav-inline-flag nav-flag-btn nav-flag-fr" data-lang="fr"
-          aria-label="Passer en français"></button>
-      </li>
-    </ul>
-    <div class="nav-flag-switcher" aria-label="Raccourcis langue">
+    <button id="nav-burger" class="nav-burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+      aria-controls="nav-links-menu">
+      <span class="nav-burger-line"></span>
+      <span class="nav-burger-line"></span>
+      <span class="nav-burger-line"></span>
+    </button>
+    <div class="nav-brand">
       <button type="button" class="nav-flag-btn nav-flag-eg" data-lang="ar-EG" aria-label="Passer en arabe"></button>
+      <span class="nav-logo">S&nbsp;&amp;&nbsp;M</span>
       <button type="button" class="nav-flag-btn nav-flag-fr" data-lang="fr" aria-label="Passer en français"></button>
     </div>
+    <ul class="nav-links" id="nav-links-menu">
+      <li><a href="#details" data-i18n="nav.details">Détails</a></li>
+      <li><a href="#programme" data-i18n="nav.program">Programme</a></li>
+      <li><a href="#lieu" data-i18n="nav.location">Lieu</a></li>
+      <li><a href="#rsvp" data-i18n="nav.rsvp">RSVP</a></li>
+    </ul>
     <div class="nav-controls">
       <label for="lang-switcher" class="visually-hidden" data-i18n="lang.label">Langue</label>
       <select id="lang-switcher" class="lang-select" aria-label="Changer la langue"
@@ -83,14 +81,21 @@
   <section class="section section--intro" aria-label="Introduction" data-i18n-attr="aria-label:intro.aria">
     <div class="section-header fade-up">
       <p class="eyebrow" data-i18n="intro.eyebrow">Notre histoire</p>
-      <h2 class="section-title" data-i18n="intro.title">Deux univers, une seule promesse</h2>
+      <h2 class="section-title" data-i18n="intro.title">Entre mer et montagne</h2>
       <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
         <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
           <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
         </svg>
       </div>
     </div>
-    <p class="intro-text fade-up" data-i18n="intro.text">
+    <p class="intro-text fade-up" data-i18n-html="intro.text">
       Entre les sommets enneigés qui veillent sur la Savoie et l'appel du large qui nous a toujours réunis,
       nous avons choisi de célébrer notre amour là où la montagne rencontre le ciel —
       et d'y inviter les personnes qui nous sont les plus chères.
@@ -103,9 +108,15 @@
       <p class="eyebrow" data-i18n="details.eyebrow">Informations</p>
       <h2 id="details-title" class="section-title" data-i18n="details.title">La journée en un coup d'œil</h2>
       <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
         <svg viewBox="0 0 24 16" fill="currentColor">
           <polygon points="12,2 4,14 20,14" />
           <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
         </svg>
       </div>
     </div>
@@ -151,36 +162,81 @@
       </div>
 
       <!-- Lieu -->
-      <div class="detail-card fade-up">
-        <div class="detail-card-icon" aria-hidden="true">
-          <!-- Location pin icon -->
-          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M20,4 C13,4 8,10 8,17 C8,26 20,38 20,38 C20,38 32,26 32,17 C32,10 27,4 20,4 Z" />
-            <circle cx="20" cy="17" r="4" />
-          </svg>
+      <a href="#lieu" class="detail-card-link">
+        <div class="detail-card fade-up">
+          <div class="detail-card-icon" aria-hidden="true">
+            <!-- Location pin icon -->
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M20,4 C13,4 8,10 8,17 C8,26 20,38 20,38 C20,38 32,26 32,17 C32,10 27,4 20,4 Z" />
+              <circle cx="20" cy="17" r="4" />
+            </svg>
+          </div>
+          <p class="detail-card-title" data-i18n="details.place.title">Lieu</p>
+          <p class="detail-card-value" data-i18n-html="details.place.value">Château<br>des Comtes</p>
+          <p class="detail-card-sub" data-i18n="details.place.sub">Challes-les-Eaux, Savoie</p>
         </div>
-        <p class="detail-card-title" data-i18n="details.place.title">Lieu</p>
-        <p class="detail-card-value" data-i18n-html="details.place.value">Château<br>des Comtes</p>
-        <p class="detail-card-sub" data-i18n="details.place.sub">Challes-les-Eaux, Savoie</p>
-      </div>
+      </a>
 
       <!-- Tenue -->
       <div class="detail-card fade-up">
         <div class="detail-card-icon" aria-hidden="true">
-          <!-- Dress code icon (suit/jacket) -->
-          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          <!-- Hanger icon -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14,4 L20,12 L26,4" />
-            <path d="M14,4 C10,6 6,10 6,18 L6,36 L34,36 L34,18 C34,10 30,6 26,4" />
-            <line x1="20" y1="12" x2="20" y2="36" />
-            <path d="M14,4 L12,10 L20,12" />
-            <path d="M26,4 L28,10 L20,12" />
+            <!-- Hook -->
+            <path d="M20,4 Q16,4 16,7 Q16,10 20,10 Q24,10 24,7 Q24,4 20,4" />
+            <!-- Hook dot -->
+            <circle cx="20" cy="7" r="1.5" fill="currentColor" />
+            <!-- Left shoulder curve -->
+            <path d="M20,10 Q12,12 8,20" />
+            <!-- Right shoulder curve -->
+            <path d="M20,10 Q28,12 32,20" />
+            <!-- Bottom bar -->
+            <line x1="8" y1="20" x2="32" y2="20" />
           </svg>
         </div>
         <p class="detail-card-title" data-i18n="details.dress.title">Tenue</p>
         <p class="detail-card-value" data-i18n="details.dress.value">Élégante</p>
         <p class="detail-card-sub" data-i18n="details.dress.sub">Cocktail chic</p>
+      </div>
+
+      <!-- Mesdames -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Female symbol -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="12" r="6" />
+            <line x1="20" y1="18" x2="20" y2="30" />
+            <line x1="14" y1="24" x2="26" y2="24" />
+          </svg>
+        </div>
+        <p class="detail-card-title" data-i18n="details.ladies.title">Mesdames</p>
+        <p class="detail-card-value" data-i18n="details.ladies.value">Couleur vive</p>
+        <p class="detail-card-sub detail-card-ban-colors">
+          <span data-i18n-html="details.ladies.sub">Interdites :</span>
+        </p>
+        <span class="color-ban color-ban-white" aria-label="Blanc interdit"></span>
+        <span class="color-ban color-ban-blue" aria-label="Bleu interdit"></span>
+        <span class="color-ban color-ban-gold" aria-label="Doré interdit"></span>
+        <span class="color-ban color-ban-silver" aria-label="Argenté interdit"></span>
+        <span class="color-ban color-ban-brown" aria-label="Marron interdit"></span>
+      </div>
+
+      <!-- Messieurs -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Male symbol -->
+          <svg viewBox="0 0 12 12" width="40" height="40" fill="none" stroke="currentColor" stroke-width="0.6"
+            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.28 7.22c0-.69-.28-1.315-.732-1.768A2.492 2.492 0 0 0 4.78 4.72a2.502 2.502 0 0 0-2.5 2.5 2.5 2.5 0 0 0 5 0zm.67-4.94h1.77v1.77M6.547 5.452l3.171-3.171" />
+          </svg>
+        </div>
+        <p class="detail-card-title" data-i18n="details.gentlemen.title">Messieurs</p>
+        <p class="detail-card-value" data-i18n="details.gentlemen.value">Costume</p>
+        <p class="detail-card-sub" data-i18n="details.gentlemen.sub">Couleur libre</p>
       </div>
 
     </div>
@@ -192,6 +248,13 @@
       <p class="eyebrow" data-i18n="program.eyebrow">Déroulement</p>
       <h2 id="programme-title" class="section-title" data-i18n="program.title">Le programme du jour</h2>
       <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
         <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
           <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
         </svg>
@@ -237,6 +300,18 @@
         <p class="eyebrow" data-i18n="location.eyebrow">Le lieu</p>
         <h2 id="lieu-title" class="location-title" data-i18n-html="location.title">Château des Comtes<br>de Challes
         </h2>
+        <div class="ornament" aria-hidden="true">
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+          </svg>
+          <svg viewBox="0 0 24 16" fill="currentColor">
+            <polygon points="12,2 4,14 20,14" />
+            <polygon points="12,2 10,7 14,7" fill="white" />
+          </svg>
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+          </svg>
+        </div>
         <address class="location-address" data-i18n-html="location.address">
           247 Montée du Château<br>
           73190 Challes-les-Eaux<br>
@@ -275,7 +350,18 @@
     <div class="fade-up">
       <p class="eyebrow" data-i18n="rsvp.eyebrow">Confirmez votre présence</p>
       <h2 id="rsvp-title" class="section-title" data-i18n="rsvp.title">Rejoignez-nous !</h2>
-
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+      </div>
       <p class="rsvp-intro" data-i18n-html="rsvp.intro">
         Votre présence nous comblerait de joie. Merci de confirmer votre participation
         avant le <strong>31 mars 2026</strong> en remplissant le formulaire ci-dessous.

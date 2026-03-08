@@ -16,11 +16,11 @@
     "nav.details": [
         {
             "lang": "en",
-            "text": "Details"
+            "text": "Informations"
         },
         {
             "lang": "fr",
-            "text": "Détails"
+            "text": "Informations"
         },
         {
             "lang": "ar-EG",
@@ -104,7 +104,7 @@
         },
         {
             "lang": "fr",
-            "text": "Vous êtes cordialement invités au mariage de"
+            "text": "Nous avons la joie de vous inviter à célébrer le mariage de"
         },
         {
             "lang": "ar-EG",
@@ -198,15 +198,15 @@
     "intro.title": [
         {
             "lang": "en",
-            "text": "Two worlds, one promise"
+            "text": "Between sea and mountains"
         },
         {
             "lang": "fr",
-            "text": "Deux univers, une seule promesse"
+            "text": "Entre mer et montagne"
         },
         {
             "lang": "ar-EG",
-            "text": "عالمان ووعد واحد"
+            "text": "بين البحر والجبال"
         }
     ],
     "intro.text": [
@@ -216,7 +216,7 @@
         },
         {
             "lang": "fr",
-            "text": "Entre les sommets enneigés qui veillent sur la Savoie et l'appel du large qui nous a toujours réunis, nous avons choisi de célébrer notre amour là où la montagne rencontre le ciel — et d'y inviter les personnes qui nous sont les plus chères."
+            "text": "Entre les majestueux sommets de la Savoie et les rivages baignés de soleil d’Alexandrie s’étendent deux paysages que tout semblait opposer. La montagne et la mer paraissent lointaines…<br/><br/>Pourtant, comme le Rhône et le Nil finissent toujours par rejoindre la mer méditérannée, nos chemins se sont rencontrés. <br/><br/>C’est cette rencontre, improbable et précieuse, que nous avons la joie de célébrer avec vous."
         },
         {
             "lang": "ar-EG",
@@ -352,15 +352,15 @@
     "details.place.value": [
         {
             "lang": "en",
-            "text": "Château<br>des Comtes"
+            "text": "Château des Comtes de Challes"
         },
         {
             "lang": "fr",
-            "text": "Château<br>des Comtes"
+            "text": "Château des Comtes de Challes"
         },
         {
             "lang": "ar-EG",
-            "text": "قصر<br>دي كومت"
+            "text": "Château des Comtes de Challes"
         }
     ],
     "details.place.sub": [
@@ -394,29 +394,113 @@
     "details.dress.value": [
         {
             "lang": "en",
-            "text": "Elegant"
+            "text": "Style"
         },
         {
             "lang": "fr",
-            "text": "Élégante"
+            "text": "Style"
         },
         {
             "lang": "ar-EG",
-            "text": "أنيق"
+            "text": "Style"
         }
     ],
     "details.dress.sub": [
         {
             "lang": "en",
-            "text": "Chic cocktail"
+            "text": "Chic / elegant"
         },
         {
             "lang": "fr",
-            "text": "Cocktail chic"
+            "text": "Chic / élégant"
         },
         {
             "lang": "ar-EG",
-            "text": "كوكتيل شيك"
+            "text": "شيك / أنيق"
+        }
+    ],
+    "details.ladies.title": [
+        {
+            "lang": "en",
+            "text": "Ladies"
+        },
+        {
+            "lang": "fr",
+            "text": "Mesdames"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "السيدات"
+        }
+    ],
+    "details.ladies.value": [
+        {
+            "lang": "en",
+            "text": "Dress"
+        },
+        {
+            "lang": "fr",
+            "text": "Robe"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "فستان"
+        }
+    ],
+    "details.ladies.sub": [
+        {
+            "lang": "en",
+            "text": "Forbidden :"
+        },
+        {
+            "lang": "fr",
+            "text": "Couleurs vives souhaitées<br/><br/>Couleurs interdites<br/>"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "ممنوع :"
+        }
+    ],
+    "details.gentlemen.title": [
+        {
+            "lang": "en",
+            "text": "Gentlemen"
+        },
+        {
+            "lang": "fr",
+            "text": "Messieurs"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "السادة"
+        }
+    ],
+    "details.gentlemen.sub": [
+        {
+            "lang": "en",
+            "text": "Any color"
+        },
+        {
+            "lang": "fr",
+            "text": "Couleur libre"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "أي لون"
+        }
+    ],
+    "details.gentlemen.value": [
+        {
+            "lang": "en",
+            "text": "Suit"
+        },
+        {
+            "lang": "fr",
+            "text": "Costume"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "البدلة موصى بها"
         }
     ],
     "program.eyebrow": [
@@ -548,11 +632,11 @@
     "program.item3.label": [
         {
             "lang": "en",
-            "text": "Gala dinner"
+            "text": "Dinner"
         },
         {
             "lang": "fr",
-            "text": "Dîner de gala"
+            "text": "Dîner"
         },
         {
             "lang": "ar-EG",
@@ -576,15 +660,15 @@
     "program.item4.time": [
         {
             "lang": "en",
-            "text": "10:00 PM"
+            "text": "11:00 PM - 4:00 AM"
         },
         {
             "lang": "fr",
-            "text": "22h00"
+            "text": "23h00 - 04h00"
         },
         {
             "lang": "ar-EG",
-            "text": "١٠:٠٠ مساءً"
+            "text": "١١:٠٠ مساءً - ٤:٠٠ صباحًا"
         }
     ],
     "program.item4.label": [
@@ -594,7 +678,7 @@
         },
         {
             "lang": "fr",
-            "text": "Soirée dansante"
+            "text": "Ouverture du bal"
         },
         {
             "lang": "ar-EG",
@@ -664,7 +748,7 @@
         },
         {
             "lang": "fr",
-            "text": "Niché sur les hauteurs de Challes-les-Eaux, ce château du XIXe siècle offre une vue imprenable sur le massif du Granier et le Nivollet. Un cadre d'exception où l'élégance de la pierre se marie à la majesté des Alpes."
+            "text": "Niché sur les hauteurs de Challes-les-Eaux, ce château du XVe siècle aux tours moyenâgeuses offre une vue imprenable sur le massif du Granier et le Nivollet. Un cadre d'exception où l'élégance de la pierre se marie à la majesté des Alpes."
         },
         {
             "lang": "ar-EG",

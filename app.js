@@ -18,6 +18,42 @@
     animatedElements.forEach(function (el) { observer.observe(el); });
 })();
 
+// === Mobile burger menu ===
+(function () {
+    'use strict';
+    var nav = document.querySelector('.nav');
+    var burger = document.getElementById('nav-burger');
+    var menu = document.getElementById('nav-links-menu');
+    if (!nav || !burger || !menu) return;
+
+    function closeMenu() {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+    }
+
+    burger.addEventListener('click', function () {
+        var isOpen = nav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('click', function (event) {
+        if (window.innerWidth > 700) return;
+        if (!nav.contains(event.target)) closeMenu();
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+    });
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 700) closeMenu();
+    });
+})();
+
 // === Global background transition ===
 (function () {
     'use strict';
