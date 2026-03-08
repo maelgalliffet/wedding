@@ -16,7 +16,7 @@
     "nav.details": [
         {
             "lang": "en",
-            "text": "Informations"
+            "text": "Information"
         },
         {
             "lang": "fr",
@@ -100,7 +100,7 @@
     "hero.eyebrow": [
         {
             "lang": "en",
-            "text": "You are warmly invited to the wedding of"
+            "text": "We are delighted to invite you to celebrate the wedding of"
         },
         {
             "lang": "fr",
@@ -136,7 +136,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "Château des Comtes de Challes · شال ليزو · سافوا"
+            "text": "Château des Comtes de Challes · Challes-les-Eaux · Savoie"
         }
     ],
     "hero.cta": [
@@ -156,11 +156,11 @@
     "hero.scrollAria": [
         {
             "lang": "en",
-            "text": "Scroll to details"
+            "text": "Scroll to information"
         },
         {
             "lang": "fr",
-            "text": "Défiler vers les détails"
+            "text": "Défiler vers les informations"
         },
         {
             "lang": "ar-EG",
@@ -212,7 +212,7 @@
     "intro.text": [
         {
             "lang": "en",
-            "text": "Between the snowy peaks overlooking Savoie and the call of the sea that has always brought us together, we chose to celebrate our love where the mountains meet the sky — and to share this day with the people we hold most dear."
+            "text": "Between the majestic peaks of Savoy and the sun‑kissed shores of Alexandria stretch two landscapes that once seemed worlds apart. The mountain and the sea appeared so distant…<br/><br/>Yet, just as the Rhône and the Nile ultimately meet the Mediterranean, our paths came together. <br/><br/>It is this rare and precious encounter that we are overjoyed to celebrate with you."
         },
         {
             "lang": "fr",
@@ -220,7 +220,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "بين القمم الثلجية التي تحرس سافوا ونداء البحر الذي جمعنا دائمًا، اخترنا أن نحتفل بحبنا حيث تلتقي الجبال بالسماء — وأن نشارك هذا اليوم مع أغلى الناس على قلوبنا."
+            "text": "بين القمم الشامخة في الـسافوا والسواحل المشرقة في الإسكندرية، يمتدّ عالمان بدا كل شيء أنه يفرقهما. الجبل والبحر يبدوان بعيدين…<br/><br/>ومع ذلك، كما يلتقي نهر الرون ونهر النيل في النهاية بالبحر الأبيض المتوسط، اجتمعت طرقنا معًا.<br/><br/>.إنّ هذا اللقاء النادر والثمين هو ما يسعدنا أن نحتفل "
         }
     ],
     "details.eyebrow": [
