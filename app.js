@@ -164,6 +164,21 @@
             if (strings[key]) el.textContent = strings[key];
         });
 
+        // Apply guests-specific modifications AFTER translations
+        if (isGuestsPage) {
+            var vinDhonneurTime = document.querySelector('[data-i18n="program.item2.time"]');
+            var endTimeByLang = {
+                'fr': '19h',
+                'en': '7:00 PM',
+                'ar-EG': '19h'
+            };
+
+            if (vinDhonneurTime) {
+                var baseTime = strings['program.item2.time'] || vinDhonneurTime.textContent;
+                vinDhonneurTime.textContent = baseTime + ' - ' + (endTimeByLang[lang] || '19h');
+            }
+        }
+
         document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
             var key = el.getAttribute('data-i18n-html');
             if (strings[key]) el.innerHTML = strings[key];
