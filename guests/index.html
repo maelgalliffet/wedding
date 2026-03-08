@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta id="meta-description" name="description" content="[i18n:description]" />
+  <title>[i18n:title]</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body data-page="guests">
+
+  <div class="site-background" aria-hidden="true">
+    <div class="bg-layer bg-mountains"></div>
+    <div class="bg-layer bg-sea"></div>
+    <div class="bg-layer bg-beach"></div>
+    <div class="bg-shade"></div>
+  </div>
+
+  <!-- ── Navigation ──────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.aria">
+    <button id="nav-burger" class="nav-burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+      aria-controls="nav-links-menu">
+      <span class="nav-burger-line"></span>
+      <span class="nav-burger-line"></span>
+      <span class="nav-burger-line"></span>
+    </button>
+    <div class="nav-brand">
+      <button type="button" class="nav-flag-btn nav-flag-eg" data-lang="ar-EG" aria-label="Passer en arabe"></button>
+      <span class="nav-logo">S&nbsp;&amp;&nbsp;M</span>
+      <button type="button" class="nav-flag-btn nav-flag-fr" data-lang="fr" aria-label="Passer en français"></button>
+    </div>
+    <ul class="nav-links" id="nav-links-menu">
+      <li><a href="#details" data-i18n="nav.details">[i18n:nav.details]</a></li>
+      <li><a href="#programme" data-i18n="nav.program">[i18n:nav.program]</a></li>
+      <li><a href="#lieu" data-i18n="nav.location">[i18n:nav.location]</a></li>
+      <li><a href="#rsvp" data-i18n="nav.rsvp">[i18n:nav.rsvp]</a></li>
+    </ul>
+    <div class="nav-controls">
+      <label for="lang-switcher" class="visually-hidden" data-i18n="lang.label">[i18n:lang.label]</label>
+      <select id="lang-switcher" class="lang-select" aria-label="Changer la langue"
+        data-i18n-attr="aria-label:lang.aria">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+        <option value="ar-EG">العربية المصرية</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- ── Hero ────────────────────────────────────────── -->
+  <header class="hero" role="banner">
+
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">[i18n:hero.eyebrow]</p>
+
+      <h1 class="hero-names">
+        Salma<span class="amp">&amp;</span>Maël
+      </h1>
+
+      <p class="hero-date" data-i18n="hero.date">[i18n:hero.date]</p>
+
+      <div class="hero-divider" aria-hidden="true"></div>
+
+      <p class="hero-place" data-i18n="hero.place">[i18n:hero.place]</p>
+    </div>
+
+  </header>
+
+  <!-- ── Intro ─────────────────────────────────────────── -->
+  <section class="section section--intro" aria-label="Introduction" data-i18n-attr="aria-label:intro.aria">
+    <div class="section-header fade-up">
+      <p class="eyebrow" data-i18n="intro.eyebrow">[i18n:intro.eyebrow]</p>
+      <h2 class="section-title" data-i18n="intro.title">[i18n:intro.title]</h2>
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+      </div>
+    </div>
+    <p class="intro-text fade-up" data-i18n-html="intro.text">[i18n:intro.text]</p>
+  </section>
+
+  <!-- ── Details ───────────────────────────────────────── -->
+  <section id="details" class="section" aria-labelledby="details-title">
+    <div class="section-header fade-up">
+      <p class="eyebrow" data-i18n="details.eyebrow">[i18n:details.eyebrow]</p>
+      <h2 id="details-title" class="section-title" data-i18n="details.title">[i18n:details.title]</h2>
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="details-grid">
+
+      <!-- Date -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Calendar icon -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="8" width="32" height="28" rx="3" />
+            <line x1="4" y1="16" x2="36" y2="16" />
+            <line x1="13" y1="4" x2="13" y2="12" />
+            <line x1="27" y1="4" x2="27" y2="12" />
+            <circle cx="13" cy="24" r="2" fill="currentColor" stroke="none" />
+            <circle cx="20" cy="24" r="2" fill="currentColor" stroke="none" />
+            <circle cx="27" cy="24" r="2" fill="currentColor" stroke="none" />
+            <circle cx="13" cy="30" r="2" fill="currentColor" stroke="none" />
+            <circle cx="20" cy="30" r="2" fill="currentColor" stroke="none" />
+          </svg>
+        </div>
+        <p class="detail-card-title" data-i18n="details.date.title">[i18n:details.date.title]</p>
+        <p class="detail-card-value" data-i18n="details.date.value">[i18n:details.date.value]</p>
+        <p class="detail-card-sub" data-i18n="details.date.sub">[i18n:details.date.sub]</p>
+      </div>
+
+      <!-- Heure -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Clock icon -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="16" />
+            <line x1="20" y1="20" x2="20" y2="11" />
+            <line x1="20" y1="20" x2="27" y2="25" />
+          </svg>
+        </div>
+        <p class="detail-card-title" data-i18n="details.time.title">[i18n:details.time.title]</p>
+        <p class="detail-card-value" data-i18n="details.time.value">[i18n:details.time.value]</p>
+        <p class="detail-card-sub" data-i18n="details.time.sub">[i18n:details.time.sub]</p>
+      </div>
+
+      <!-- Lieu -->
+      <a href="#lieu" class="detail-card-link">
+        <div class="detail-card fade-up">
+          <div class="detail-card-icon" aria-hidden="true">
+            <!-- Location pin icon -->
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M20,4 C13,4 8,10 8,17 C8,26 20,38 20,38 C20,38 32,26 32,17 C32,10 27,4 20,4 Z" />
+              <circle cx="20" cy="17" r="4" />
+            </svg>
+          </div>
+          <p class="detail-card-title" data-i18n="details.place.title">[i18n:details.place.title]</p>
+          <p class="detail-card-value" data-i18n-html="details.place.value">[i18n:details.place.value]</p>
+          <p class="detail-card-sub" data-i18n="details.place.sub">[i18n:details.place.sub]</p>
+        </div>
+      </a>
+
+      <!-- Tenue -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Hanger icon -->
+          <img src="/images/cintre.svg" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <p class="detail-card-title" data-i18n="details.dress.title">[i18n:details.dress.title]</p>
+        <p class="detail-card-value" data-i18n="details.dress.value">[i18n:details.dress.value]</p>
+        <p class="detail-card-sub" data-i18n="details.dress.sub">[i18n:details.dress.sub]</p>
+      </div>
+
+      <!-- Mesdames -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Female symbol -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+            stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="12" r="6" />
+            <line x1="20" y1="18" x2="20" y2="30" />
+            <line x1="14" y1="24" x2="26" y2="24" />
+          </svg>
+        </div>
+        <p class="detail-card-title" data-i18n="details.ladies.title">[i18n:details.ladies.title]</p>
+        <p class="detail-card-value" data-i18n="details.ladies.value">[i18n:details.ladies.value]</p>
+        <p class="detail-card-sub detail-card-ban-colors">
+          <span data-i18n-html="details.ladies.sub">[i18n:details.ladies.sub]</span>
+        </p>
+        <span class="color-ban color-ban-white" aria-label="Blanc interdit"></span>
+        <span class="color-ban color-ban-blue" aria-label="Bleu interdit"></span>
+        <span class="color-ban color-ban-gold" aria-label="Doré interdit"></span>
+        <span class="color-ban color-ban-silver" aria-label="Argenté interdit"></span>
+        <span class="color-ban color-ban-brown" aria-label="Marron interdit"></span>
+      </div>
+
+      <!-- Messieurs -->
+      <div class="detail-card fade-up">
+        <div class="detail-card-icon" aria-hidden="true">
+          <!-- Male symbol -->
+          <svg viewBox="0 0 12 12" width="55" height="55" fill="none" stroke="currentColor" stroke-width="0.9"
+            stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.28 7.22c0-.69-.28-1.315-.732-1.768A2.492 2.492 0 0 0 4.78 4.72a2.502 2.502 0 0 0-2.5 2.5 2.5 2.5 0 0 0 5 0zm.67-4.94h1.77v1.77M6.547 5.452l3.171-3.171" />
+          </svg>
+        </div>
+        <p class="detail-card-title" data-i18n="details.gentlemen.title">[i18n:details.gentlemen.title]</p>
+        <p class="detail-card-value" data-i18n="details.gentlemen.value">[i18n:details.gentlemen.value]</p>
+        <p class="detail-card-sub" data-i18n="details.gentlemen.sub">[i18n:details.gentlemen.sub]</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Programme ─────────────────────────────────────── -->
+  <section id="programme" class="section section--programme" aria-labelledby="programme-title">
+    <div class="section-header fade-up">
+      <p class="eyebrow" data-i18n="program.eyebrow">[i18n:program.eyebrow]</p>
+      <h2 id="programme-title" class="section-title" data-i18n="program.title">[i18n:program.title]</h2>
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="timeline fade-up" role="list">
+
+      <div class="timeline-item" role="listitem">
+        <p class="timeline-time" data-i18n="program.item1.time">[i18n:program.item1.time]</p>
+        <p class="timeline-label" data-i18n="program.item1.label">[i18n:program.item1.label]</p>
+        <p class="timeline-desc" data-i18n="program.item1.desc">[i18n:program.item1.desc]</p>
+      </div>
+
+      <div class="timeline-item" role="listitem">
+        <p class="timeline-time" data-i18n="program.item2.time">[i18n:program.item2.time]</p>
+        <p class="timeline-label" data-i18n="program.item2.label">[i18n:program.item2.label]</p>
+        <p class="timeline-desc" data-i18n="program.item2.desc">[i18n:program.item2.desc]</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Lieu ───────────────────────────────────────────── -->
+  <section id="lieu" class="section section--location" aria-labelledby="lieu-title">
+    <div class="location-block">
+
+      <div class="location-header-card fade-up">
+        <p class="eyebrow" data-i18n="location.eyebrow">[i18n:location.eyebrow]</p>
+        <h2 id="lieu-title" class="location-title" data-i18n-html="location.title">[i18n:location.title]</h2>
+        <div class="ornament" aria-hidden="true">
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+          </svg>
+          <svg viewBox="0 0 24 16" fill="currentColor">
+            <polygon points="12,2 4,14 20,14" />
+            <polygon points="12,2 10,7 14,7" fill="white" />
+          </svg>
+          <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="location-info-card fade-up">
+        <p class="location-desc" data-i18n="location.desc">[i18n:location.desc]</p>
+        <br />
+        <address class="location-address" data-i18n-html="location.address">[i18n:location.address]</address>
+        <a href="https://maps.google.com/?q=Chateau+des+Comtes+de+Challes+73190" target="_blank"
+          rel="noopener noreferrer" class="location-map-link">
+          <span data-i18n="location.mapLink">[i18n:location.mapLink]</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── RSVP ───────────────────────────────────────────── -->
+  <section id="rsvp" class="rsvp-section" aria-labelledby="rsvp-title">
+
+    <div class="rsvp-header fade-up">
+      <p class="eyebrow" data-i18n="rsvp.eyebrow">[i18n:rsvp.eyebrow]</p>
+      <h2 id="rsvp-title" class="section-title" data-i18n="rsvp.title">[i18n:rsvp.title]</h2>
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="currentColor">
+          <polygon points="12,2 4,14 20,14" />
+          <polygon points="12,2 10,7 14,7" fill="white" />
+        </svg>
+        <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="rsvp-content fade-up">
+      <p class="rsvp-intro" data-i18n-html="rsvp.intro">[i18n:rsvp.intro]</p>
+
+      <p class="rsvp-date" data-i18n="rsvp.deadline">[i18n:rsvp.deadline]</p>
+
+      <!--
+        Remplacez le href ci-dessous par votre lien Google Form réel.
+        Exemple : https://forms.gle/XXXXXXXXXXXXXXXX
+      -->
+      <a href="https://forms.gle/Nprychy3yCCdcuF78" target="_blank" rel="noopener noreferrer" class="rsvp-btn"
+        aria-label="Confirmer ma présence via le formulaire en ligne" data-i18n-attr="aria-label:rsvp.buttonAria">
+        <span data-i18n="rsvp.button">[i18n:rsvp.button]</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ── Scroll animation ─────────────────────────────────── -->
+  <script src="/app.js"></script>
+
+</body>
+
+</html>

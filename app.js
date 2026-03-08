@@ -120,6 +120,7 @@
     var STORAGE_KEY = 'wedding-language';
     var RSVP_FORM_FR = 'https://forms.gle/Nprychy3yCCdcuF78';
     var RSVP_FORM_INTL = 'https://forms.gle/4tUC8mPCWoZgWtvT6';
+    var isGuestsPage = document.body && document.body.getAttribute('data-page') === 'guests';
     var selector = document.getElementById('lang-switcher');
     var flagButtons = document.querySelectorAll('.nav-flag-btn[data-lang]');
     var rsvpButton = document.querySelector('.rsvp-btn');
@@ -142,6 +143,20 @@
 
         if (rsvpButton) {
             rsvpButton.setAttribute('href', lang === 'fr' ? RSVP_FORM_FR : RSVP_FORM_INTL);
+        }
+
+        if (isGuestsPage) {
+            var vinDhonneurTime = document.querySelector('[data-i18n="program.item2.time"]');
+            var endTimeByLang = {
+                'fr': '19h',
+                'en': '7:00 PM',
+                'ar-EG': '19h'
+            };
+
+            if (vinDhonneurTime) {
+                var baseTime = strings['program.item2.time'] || vinDhonneurTime.textContent;
+                vinDhonneurTime.textContent = baseTime + ' - ' + (endTimeByLang[lang] || '19h');
+            }
         }
 
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
@@ -208,7 +223,9 @@
     }
 
     // Load translations from external JSON file
-    fetch('translations.json')
+    var translationsUrl = isGuestsPage ? '/translations.json' : 'translations.json';
+
+    fetch(translationsUrl)
         .then(function (response) {
             if (!response.ok) throw new Error('Failed to load translations.json');
             return response.json();
