@@ -11,7 +11,7 @@
   /* groom suit */
   --sky: #B0D8E6;
   /* bridesmaids */
-  --blue: #447FB0;
+  --blue: #3d719b;
   /* bridesmaids */
   --white: #F0F0F0;
   /* bride */
@@ -79,7 +79,12 @@ a {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--brown);
-  font-weight: 600;
+  font-weight: 700;
+  text-shadow:
+    0 2px 6px rgba(255, 255, 255, 0.75),
+    0 4px 14px rgba(255, 255, 255, 0.5),
+    0 0 3px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(47, 65, 102, 0.15);
 }
 
 h1,
@@ -275,13 +280,13 @@ h3 {
 
 .hero-content .eyebrow {
   margin-bottom: 1.5rem;
-  <<<<<<< HEAD font-size: 0.95rem;
-  =======font-size: 0.80rem;
-  >>>>>>>d1a33af (amélioration lisibilité) font-weight: 700;
+  font-size: 0.88rem;
+  font-weight: 700;
   text-shadow:
-    0 1px 3px rgba(255, 255, 255, 0.45),
-    0 2px 7px rgba(255, 255, 255, 0.25),
-    0 0 2px rgba(255, 255, 255, 0.35);
+    0 2px 5px rgba(255, 255, 255, 0.6),
+    0 3px 11px rgba(255, 255, 255, 0.35),
+    0 0 2.5px rgba(255, 255, 255, 0.45),
+    0 1px 2px rgba(47, 65, 102, 0.1);
 }
 
 .hero-names {
@@ -316,9 +321,10 @@ h3 {
   color: var(--brown);
   font-weight: 700;
   text-shadow:
-    0 1px 3px rgba(255, 255, 255, 0.42),
-    0 2px 8px rgba(255, 255, 255, 0.25),
-    0 0 2px rgba(255, 255, 255, 0.35);
+    0 2px 5px rgba(255, 255, 255, 0.6),
+    0 3px 11px rgba(255, 255, 255, 0.35),
+    0 0 2.5px rgba(255, 255, 255, 0.45),
+    0 1px 2px rgba(47, 65, 102, 0.1);
 }
 
 .hero-divider {
@@ -331,14 +337,15 @@ h3 {
 
 .hero-place {
   font-family: var(--serif);
-  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.5rem);
   color: var(--muted);
   font-style: italic;
   font-weight: 700;
   text-shadow:
-    0 1px 3px rgba(255, 255, 255, 0.42),
-    0 2px 8px rgba(255, 255, 255, 0.25),
-    0 0 2px rgba(255, 255, 255, 0.35);
+    0 2px 5px rgba(255, 255, 255, 0.6),
+    0 3px 11px rgba(255, 255, 255, 0.35),
+    0 0 2.5px rgba(255, 255, 255, 0.45),
+    0 1px 2px rgba(47, 65, 102, 0.1);
 }
 
 /* ── Global scroll background ───────────────────────── */
@@ -769,27 +776,40 @@ body.lang-ar .timeline-item::before {
 
 /* Enhanced readability for Arabic text in hero section */
 body.lang-ar .hero-content .eyebrow {
+  font-family: 'Noto Sans Arabic', 'Cairo', 'Tajawal', system-ui, sans-serif;
   font-size: 1.15rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   font-weight: 700;
   text-shadow:
-    0 2px 6px rgba(255, 255, 255, 0.75),
-    0 4px 14px rgba(255, 255, 255, 0.5),
-    0 0 3px rgba(255, 255, 255, 0.6),
-    0 1px 2px rgba(47, 65, 102, 0.15);
+    0 2px 5px rgba(255, 255, 255, 0.6),
+    0 3px 11px rgba(255, 255, 255, 0.35),
+    0 0 2.5px rgba(255, 255, 255, 0.45),
+    0 1px 2px rgba(47, 65, 102, 0.1);
 }
 
 body.lang-ar .hero-date {
+  font-family: 'Noto Sans Arabic', 'Cairo', 'Tajawal', system-ui, sans-serif;
   font-size: 1.5rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   font-weight: 700;
   text-shadow:
-    0 2px 6px rgba(255, 255, 255, 0.75),
-    0 4px 14px rgba(255, 255, 255, 0.5),
-    0 0 3px rgba(255, 255, 255, 0.6),
-    0 1px 2px rgba(47, 65, 102, 0.15);
+    0 2px 5px rgba(255, 255, 255, 0.6),
+    0 3px 11px rgba(255, 255, 255, 0.35),
+    0 0 2.5px rgba(255, 255, 255, 0.45),
+    0 1px 2px rgba(47, 65, 102, 0.1);
 }
 
+body.lang-ar .hero-place {
+  font-family: 'Noto Sans Arabic', 'Cairo', 'Tajawal', system-ui, sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 1.9rem);
+  letter-spacing: 0;
+  font-weight: 700;
+  text-shadow:
+    0 2px 5px rgba(255, 255, 255, 0.6),
+    0 3px 11px rgba(255, 255, 255, 0.35),
+    0 0 2.5px rgba(255, 255, 255, 0.45),
+    0 1px 2px rgba(47, 65, 102, 0.1);
+}
 
 body.lang-ar .hero-names {
   font-size: clamp(4rem, 12vw, 9rem);
