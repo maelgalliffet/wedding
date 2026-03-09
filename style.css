@@ -291,7 +291,7 @@ h3 {
 
 .hero-names {
   font-family: var(--serif);
-  font-size: clamp(5rem, 12vw, 9rem);
+  font-size: clamp(4.5rem, 12vw, 9rem);
   color: var(--navy);
   font-weight: 300;
   letter-spacing: -0.01em;
@@ -800,7 +800,7 @@ body.lang-ar .hero-date {
 }
 
 body.lang-ar .hero-names {
-  font-size: clamp(5rem, 12vw, 9rem);
+  font-size: clamp(4.5rem, 12vw, 9rem);
 }
 
 /* ── Location ────────────────────────────────────────── */
@@ -914,6 +914,7 @@ body.lang-ar .hero-names {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   box-shadow: 0 4px 16px rgba(47, 65, 102, 0.2);
+  margin-bottom: 1rem;
 }
 
 .rsvp-btn:hover {
