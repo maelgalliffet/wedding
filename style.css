@@ -291,7 +291,7 @@ h3 {
 
 .hero-names {
   font-family: var(--serif);
-  font-size: clamp(4rem, 12vw, 9rem);
+  font-size: clamp(5rem, 12vw, 9rem);
   color: var(--navy);
   font-weight: 300;
   letter-spacing: -0.01em;
@@ -812,7 +812,7 @@ body.lang-ar .hero-place {
 }
 
 body.lang-ar .hero-names {
-  font-size: clamp(4rem, 12vw, 9rem);
+  font-size: clamp(5rem, 12vw, 9rem);
 }
 
 /* ── Location ────────────────────────────────────────── */
