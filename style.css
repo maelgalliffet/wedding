@@ -275,9 +275,12 @@ h3 {
 
 .hero-content .eyebrow {
   margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
   text-shadow:
-    0 1px 2px rgba(255, 255, 255, 0.32),
-    0 2px 5px rgba(255, 255, 255, 0.16);
+    0 1px 3px rgba(255, 255, 255, 0.45),
+    0 2px 7px rgba(255, 255, 255, 0.25),
+    0 0 2px rgba(255, 255, 255, 0.35);
 }
 
 .hero-names {
@@ -306,14 +309,15 @@ h3 {
 .hero-date {
   margin-top: 1.5rem;
   font-family: var(--sans);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--brown);
-  font-weight: 600;
+  font-weight: 700;
   text-shadow:
-    0 1px 2px rgba(255, 255, 255, 0.26),
-    0 2px 5px rgba(255, 255, 255, 0.13);
+    0 1px 3px rgba(255, 255, 255, 0.42),
+    0 2px 8px rgba(255, 255, 255, 0.25),
+    0 0 2px rgba(255, 255, 255, 0.35);
 }
 
 .hero-divider {
@@ -326,13 +330,14 @@ h3 {
 
 .hero-place {
   font-family: var(--serif);
-  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
   color: var(--muted);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   text-shadow:
-    0 1px 2px rgba(255, 255, 255, 0.26),
-    0 2px 5px rgba(255, 255, 255, 0.13);
+    0 1px 3px rgba(255, 255, 255, 0.42),
+    0 2px 8px rgba(255, 255, 255, 0.25),
+    0 0 2px rgba(255, 255, 255, 0.35);
 }
 
 /* ── Global scroll background ───────────────────────── */
@@ -759,6 +764,39 @@ body.lang-ar .timeline-item {
 body.lang-ar .timeline-item::before {
   left: auto;
   right: -4px;
+}
+
+/* Enhanced readability for Arabic text in hero section */
+body.lang-ar .hero-content .eyebrow {
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-shadow:
+    0 2px 6px rgba(255, 255, 255, 0.75),
+    0 4px 14px rgba(255, 255, 255, 0.5),
+    0 0 3px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(47, 65, 102, 0.15);
+}
+
+body.lang-ar .hero-date {
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-shadow:
+    0 2px 6px rgba(255, 255, 255, 0.75),
+    0 4px 14px rgba(255, 255, 255, 0.5),
+    0 0 3px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(47, 65, 102, 0.15);
+}
+
+body.lang-ar .hero-place {
+  font-size: clamp(1.5rem, 2.8vw, 1.9rem);
+  font-weight: 700;
+  text-shadow:
+    0 2px 6px rgba(255, 255, 255, 0.75),
+    0 4px 14px rgba(255, 255, 255, 0.5),
+    0 0 3px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(47, 65, 102, 0.15);
 }
 
 /* ── Location ────────────────────────────────────────── */
