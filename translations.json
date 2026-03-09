@@ -111,6 +111,34 @@
             "text": "تتشرف عائلة طارق الوكيل و عائلة إيفان جاليفيه بدعوة سيادتكم لحضور حفل زفاف"
         }
     ],
+    "hero.salma": [
+        {
+            "lang": "en",
+            "text": "Salma"
+        },
+        {
+            "lang": "fr",
+            "text": "Salma"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "سلمى"
+        }
+    ],
+    "hero.mael": [
+        {
+            "lang": "en",
+            "text": "Maël"
+        },
+        {
+            "lang": "fr",
+            "text": "Maël"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "ماييل"
+        }
+    ],
     "hero.date": [
         {
             "lang": "en",
@@ -832,7 +860,7 @@
         },
         {
             "lang": "fr",
-            "text": "Votre présence nous comblerait de joie. Merci de confirmer votre participation avant le <strong>30 avril 2026</strong> en remplissant le formulaire ci-dessous."
+            "text": "Votre présence nous comblerait de joie. Merci de confirmer votre participation en remplissant le formulaire ci-dessous."
         },
         {
             "lang": "ar-EG",

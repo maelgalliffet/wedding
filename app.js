@@ -88,13 +88,13 @@
         var scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
         var progress = clamp(window.scrollY / scrollable, 0, 1);
 
-        // 1/3 montagne, 1/3 mer, 1/3 plage with smooth transitions at the boundaries.
+        // 1/4 montagne, 1/2 mer, 1/4 plage with smooth transitions at the boundaries.
         var blend = 0.12;
-        var mountainOpacity = 1 - smoothstep((1 / 3) - blend, (1 / 3) + blend, progress);
-        var seaIn = smoothstep((1 / 3) - blend, (1 / 3) + blend, progress);
-        var seaOut = 1 - smoothstep((2 / 3) - blend, (2 / 3) + blend, progress);
+        var mountainOpacity = 1 - smoothstep(0.25 - blend, 0.25 + blend, progress);
+        var seaIn = smoothstep(0.25 - blend, 0.25 + blend, progress);
+        var seaOut = 1 - smoothstep(0.75 - blend, 0.75 + blend, progress);
         var seaOpacity = clamp(Math.min(seaIn, seaOut), 0, 1);
-        var beachOpacity = smoothstep((2 / 3) - blend, (2 / 3) + blend, progress);
+        var beachOpacity = smoothstep(0.75 - blend, 0.75 + blend, progress);
 
         backdrop.style.setProperty('--bg-mountains-opacity', mountainOpacity.toFixed(4));
         backdrop.style.setProperty('--bg-sea-opacity', seaOpacity.toFixed(4));
