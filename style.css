@@ -341,9 +341,18 @@ h3 {
   --bg-sea-opacity: 0;
   --bg-beach-opacity: 0;
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   z-index: -2;
   overflow: hidden;
+}
+
+@supports (height: 100lvh) {
+  .site-background {
+    height: 100lvh;
+  }
 }
 
 .bg-layer {
@@ -928,6 +937,11 @@ body.lang-ar .timeline-item::before {
 
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 700px) {
+  .site-background {
+    /* Keep background height stable while mobile browser UI shows/hides. */
+    height: 100lvh;
+  }
+
   .bg-mountains {
     background-image: url('images/vertical_mountains.png');
   }
@@ -1153,6 +1167,9 @@ body.lang-ar .timeline-item::before {
 
   .bg-layer {
     background-size: cover;
+    /* Overscan avoids tiny bottom gaps during viewport resize on Android. */
+    transform: scale(1.02);
+    transform-origin: center center;
   }
 
   .bg-shade {
