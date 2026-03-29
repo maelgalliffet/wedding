@@ -238,7 +238,7 @@
     }
 
     // Load translations from external JSON file
-    var translationsUrl = isGuestsPage ? '/translations.json' : 'translations.json';
+    var translationsUrl = '/translations.json';
 
     fetch(translationsUrl)
         .then(function (response) {
