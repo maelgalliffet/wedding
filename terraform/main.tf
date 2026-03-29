@@ -115,7 +115,7 @@ resource "aws_acm_certificate_validation" "website" {
   depends_on = [aws_route53_record.cert_validation]
 }
 
-# CloudFront Function to route guests paths to the guests SPA entrypoint
+# CloudFront Function to enforce exact invitation URLs
 resource "aws_cloudfront_function" "guests_rewrite" {
   name    = "wedding-guests-rewrite"
   runtime = "cloudfront-js-1.0"
@@ -125,12 +125,73 @@ resource "aws_cloudfront_function" "guests_rewrite" {
 function handler(event) {
   var request = event.request;
   var uri = request.uri;
+  var mainInvitePath = '/faire-part-mariage/20062026';
+  var guestsInvitePath = '/faire-part-vin-d-honneur/20062026';
 
-  if (uri === '/guests' || uri.indexOf('/guests/') === 0) {
-    request.uri = '/guests/index.html';
+  function deny() {
+    return {
+      statusCode: 404,
+      statusDescription: 'Not Found',
+      headers: {
+        'cache-control': { value: 'no-store' }
+      }
+    };
   }
 
-  return request;
+  function isAllowedStaticPath(path) {
+    if (
+      path === '/app.js' ||
+      path === '/style.css' ||
+      path === '/translations.json' ||
+      path === '/exemple.json'
+    ) {
+      return true;
+    }
+
+    if (path.indexOf('/images/') === 0) {
+      return true;
+    }
+
+    return false;
+  }
+
+  if (uri === mainInvitePath) {
+    request.uri = '/index.html';
+    return request;
+  }
+
+  if (uri === guestsInvitePath) {
+    request.uri = '/guests/index.html';
+    return request;
+  }
+
+  if (uri === '/' || uri === '/index.html' || uri === '/guests' || uri === '/guests/index.html') {
+    return deny();
+  }
+
+  if (isAllowedStaticPath(uri)) {
+    return request;
+  }
+
+  if (uri.indexOf('/faire-part-mariage/') === 0) {
+    var strippedMain = '/' + uri.substring('/faire-part-mariage/'.length);
+    if (isAllowedStaticPath(strippedMain)) {
+      request.uri = strippedMain;
+      return request;
+    }
+    return deny();
+  }
+
+  if (uri.indexOf('/faire-part-vin-d-honneur/') === 0) {
+    var strippedGuests = '/' + uri.substring('/faire-part-vin-d-honneur/'.length);
+    if (isAllowedStaticPath(strippedGuests)) {
+      request.uri = strippedGuests;
+      return request;
+    }
+    return deny();
+  }
+
+  return deny();
 }
 EOT
 }
@@ -178,19 +239,6 @@ resource "aws_cloudfront_distribution" "website" {
 
       viewer_protocol_policy = "https-only"
     }
-  }
-
-  # Custom error responses
-  custom_error_response {
-    error_code         = 403
-    response_code      = 200
-    response_page_path = "/index.html"
-  }
-
-  custom_error_response {
-    error_code         = 404
-    response_code      = 200
-    response_page_path = "/index.html"
   }
 
   restrictions {
