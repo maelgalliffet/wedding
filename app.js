@@ -120,6 +120,7 @@
     var STORAGE_KEY = 'wedding-language';
     var RSVP_FORM_FR = 'https://forms.gle/Nprychy3yCCdcuF78';
     var RSVP_FORM_INTL = 'https://forms.gle/4tUC8mPCWoZgWtvT6';
+    var RSVP_FORM_GUESTS = 'https://docs.google.com/forms/d/e/1FAIpQLSdAZbGQrn5hyi1u9a1jd9_w6j-5717cwy2YiKT0Sc0R3444NA/viewform?usp=publish-editor';
     var isGuestsPage = document.body && document.body.getAttribute('data-page') === 'guests';
     var selector = document.getElementById('lang-switcher');
     var flagButtons = document.querySelectorAll('.nav-flag-btn[data-lang]');
@@ -142,7 +143,8 @@
         document.body.classList.toggle('lang-ar', lang === 'ar-EG');
 
         if (rsvpButton) {
-            rsvpButton.setAttribute('href', lang === 'fr' ? RSVP_FORM_FR : RSVP_FORM_INTL);
+            var rsvpUrl = isGuestsPage ? RSVP_FORM_GUESTS : (lang === 'fr' ? RSVP_FORM_FR : RSVP_FORM_INTL);
+            rsvpButton.setAttribute('href', rsvpUrl);
         }
 
         if (isGuestsPage) {
