@@ -115,6 +115,26 @@ resource "aws_acm_certificate_validation" "website" {
   depends_on = [aws_route53_record.cert_validation]
 }
 
+# CloudFront Function to route guests paths to the guests SPA entrypoint
+resource "aws_cloudfront_function" "guests_rewrite" {
+  name    = "wedding-guests-rewrite"
+  runtime = "cloudfront-js-1.0"
+  publish = true
+
+  code = <<-EOT
+function handler(event) {
+  var request = event.request;
+  var uri = request.uri;
+
+  if (uri === '/guests' || uri.indexOf('/guests/') === 0) {
+    request.uri = '/guests/index.html';
+  }
+
+  return request;
+}
+EOT
+}
+
 # CloudFront distribution
 resource "aws_cloudfront_distribution" "website" {
   enabled             = true
@@ -135,6 +155,11 @@ resource "aws_cloudfront_distribution" "website" {
     compress         = true
 
     cache_policy_id = data.aws_cloudfront_cache_policy.managed_caching_optimized.id
+
+    function_association {
+      event_type   = "viewer-request"
+      function_arn = aws_cloudfront_function.guests_rewrite.arn
+    }
 
     viewer_protocol_policy = "redirect-to-https"
   }
