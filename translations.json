@@ -506,7 +506,7 @@
     "details.gentlemen.sub": [
         {
             "lang": "en",
-            "text": "Free choice of color"
+            "text": "Free color"
         },
         {
             "lang": "fr",
@@ -514,7 +514,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "أي لون"
+            "text": "لون حر"
         }
     ],
     "details.gentlemen.value": [
