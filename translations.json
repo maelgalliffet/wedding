@@ -80,7 +80,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "صندوق الهدايا"
+            "text": "صندوق هدية الزفاف"
         }
     ],
     "lang.aria": [
@@ -954,7 +954,7 @@
     "cagnotte.title": [
         {
             "lang": "en",
-            "text": "A heartfelt thank you!"
+            "text": "Big thanks !"
         },
         {
             "lang": "fr",
@@ -962,13 +962,13 @@
         },
         {
             "lang": "ar-EG",
-            "text": "شكراً لكم من القلب!"
+            "text": "شكراً لكم !"
         }
     ],
     "cagnotte.intro": [
         {
             "lang": "en",
-            "text": "Having you by our side or in your thoughts as we celebrate our union is already the greatest gift 🥰<br>If you would like to further show your affection, we have set up this fund to help us realize a dream close to our hearts: our honeymoon in Peru ✈️"
+            "text": "Having you with us, or feeling your warm thoughts as we celebrate our union is already the greatest gift 🥰<br>If you wish to show your love a little further, we have set up this fund to help us fulfill a dream close to our hearts: our honeymoon in Peru ✈️"
         },
         {
             "lang": "fr",
@@ -976,7 +976,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "وجودكم بجانبنا أو مشاعركم الدافئة للاحتفال بزواجنا هي بالفعل أجمل هدية 🥰<br>إذا كنتم ترغبون في التعبير عن محبتكم بشكل أكبر، فقد أنشأنا هذا الصندوق لمساعدتنا في تحقيق حلم عزيز على قلوبنا: رحلة شهر العسل في بيرو ✈️"
+            "text": "وجودكم إلى جانبنا ونحن نحتفل بزواجنا هو بالفعل أجمل هدية 🥰<br>إذا كنتم ترغبون في التعبير عن محبتكم بشكل أكبر، فقد أنشأنا هذا الصندوق لمساعدتنا في تحقيق حلم عزيز على قلوبنا: رحلة شهر العسل إلى Peru ✈️"
         }
     ],
     "cagnotte.eyebrow": [
@@ -990,13 +990,13 @@
         },
         {
             "lang": "ar-EG",
-            "text": "صندوق شهر العسل"
+            "text": "صندوق هدية الزفاف"
         }
     ],
     "cagnotte.button": [
         {
             "lang": "en",
-            "text": "Contribute"
+            "text": "Participate"
         },
         {
             "lang": "fr",
@@ -1004,7 +1004,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "شاركونا فرحتنا"
+            "text": "شاركونا رحلتنا"
         }
     ],
     "cagnotte.deadline": [
