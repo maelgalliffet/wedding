@@ -490,7 +490,8 @@ h3 {
 }
 
 .section+.section,
-.section+.rsvp-section {
+.section+.rsvp-section,
+.rsvp-section+.rsvp-section {
   margin-top: 160px;
 }
 
@@ -1072,7 +1073,8 @@ body.lang-ar .hero-names {
   }
 
   .section+.section,
-  .section+.rsvp-section {
+  .section+.rsvp-section,
+  .rsvp-section+.rsvp-section {
     margin-top: 100px;
   }
 
