@@ -152,6 +152,14 @@ function handler(event) {
       return true;
     }
 
+    if (path.indexOf('/scripts/') === 0) {
+      return true;
+    }
+
+    if (path.indexOf('/partials/') === 0) {
+      return true;
+    }
+
     return false;
   }
 
