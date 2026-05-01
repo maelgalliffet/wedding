@@ -69,6 +69,20 @@
             "text": "تأكيد الحضور"
         }
     ],
+    "nav.cagnotte": [
+        {
+            "lang": "en",
+            "text": "Gift fund"
+        },
+        {
+            "lang": "fr",
+            "text": "Cagnotte"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "صندوق الهدايا"
+        }
+    ],
     "lang.aria": [
         {
             "lang": "en",
@@ -935,6 +949,76 @@
         {
             "lang": "ar-EG",
             "text": "سلمى و ماييل · ٢٠ يونيو ٢٠٢٦"
+        }
+    ],
+    "cagnotte.title": [
+        {
+            "lang": "en",
+            "text": "A heartfelt thank you!"
+        },
+        {
+            "lang": "fr",
+            "text": "Un grand merci !"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "شكراً لكم من القلب!"
+        }
+    ],
+    "cagnotte.intro": [
+        {
+            "lang": "en",
+            "text": "Having you by our side or in our thoughts as we celebrate our union is already the greatest gift 🥰<br>If you would like to further show your affection, we have set up this fund to help us realize a dream close to our hearts: our honeymoon in Peru ✈️"
+        },
+        {
+            "lang": "fr",
+            "text": "Votre présence à nos côtés ou vos pensées chaleureuses pour célébrer notre union sont déjà le plus beau des cadeaux 🥰<br>Si vous souhaitez nous témoigner votre affection davantage, nous avons mis en place cette cagnotte pour nous aider à réaliser un rêve qui nous tient à cœur : notre voyage de noces au Pérou ✈️"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "وجودكم بجانبنا أو مشاعركم الدافئة للاحتفال بزواجنا هي بالفعل أجمل هدية 🥰<br>إذا كنتم ترغبون في التعبير عن محبتكم بشكل أكبر، فقد أنشأنا هذا الصندوق لمساعدتنا في تحقيق حلم عزيز على قلوبنا: رحلة شهر العسل في بيرو ✈️"
+        }
+    ],
+    "cagnotte.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Our gift fund"
+        },
+        {
+            "lang": "fr",
+            "text": "Notre cagnotte"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "صندوق شهر العسل"
+        }
+    ],
+    "cagnotte.button": [
+        {
+            "lang": "en",
+            "text": "Contribute"
+        },
+        {
+            "lang": "fr",
+            "text": "Participez"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "شاركونا فرحتنا"
+        }
+    ],
+    "cagnotte.deadline": [
+        {
+            "lang": "en",
+            "text": "Participation deadline · June 30, 2026"
+        },
+        {
+            "lang": "fr",
+            "text": "Date limite de participation · 30 juin 2026"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "آخر موعد للمشاركة · ٣٠ يونيو ٢٠٢٦"
         }
     ],
     "description": [
