@@ -1,0 +1,35 @@
+<!-- ── Programme ─────────────────────────────────────── -->
+<section id="programme" class="section section--programme" aria-labelledby="programme-title">
+  <div class="section-header fade-up">
+    <p class="eyebrow" data-i18n="program.eyebrow">[i18n:program.eyebrow]</p>
+    <h2 id="programme-title" class="section-title" data-i18n="program.title">[i18n:program.title]</h2>
+    <div class="ornament" aria-hidden="true">
+      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+      </svg>
+      <svg viewBox="0 0 24 16" fill="currentColor">
+        <polygon points="12,2 4,14 20,14" />
+        <polygon points="12,2 10,7 14,7" fill="white" />
+      </svg>
+      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="timeline fade-up" role="list">
+
+    <div class="timeline-item" role="listitem">
+      <p class="timeline-time" data-i18n="program.item1.time">[i18n:program.item1.time]</p>
+      <p class="timeline-label" data-i18n="program.item1.label">[i18n:program.item1.label]</p>
+      <p class="timeline-desc" data-i18n="program.item1.desc">[i18n:program.item1.desc]</p>
+    </div>
+
+    <div class="timeline-item" role="listitem">
+      <p class="timeline-time" data-i18n="program.item2.time">[i18n:program.item2.time]</p>
+      <p class="timeline-label" data-i18n="program.item2.label">[i18n:program.item2.label]</p>
+      <p class="timeline-desc" data-i18n="program.item2.desc">[i18n:program.item2.desc]</p>
+    </div>
+
+  </div>
+</section>
