@@ -404,15 +404,13 @@ h3 {
 }
 
 .hero,
-.section,
-.rsvp-section {
+.section {
   position: relative;
   background: transparent;
 }
 
 .hero::before,
-.section::before,
-.rsvp-section::before {
+.section::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -421,8 +419,7 @@ h3 {
   backdrop-filter: blur(4px);
 }
 
-.section::before,
-.rsvp-section::before {
+.section::before {
   border: 1px solid rgba(47, 65, 102, 0.18);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.45);
@@ -489,10 +486,12 @@ h3 {
   isolation: isolate;
 }
 
-.section+.section,
-.section+.rsvp-section,
-.rsvp-section+.rsvp-section {
+.section+.section {
   margin-top: 160px;
+}
+
+.section:last-of-type {
+  margin-bottom: 50px;
 }
 
 .section--intro {
@@ -914,10 +913,10 @@ body.lang-ar .hero-names {
 }
 
 /* ── RSVP ────────────────────────────────────────────── */
-.rsvp-section {
+#rsvp,
+#cagnotte {
   width: 70%;
   max-width: var(--max-width);
-  margin: 0 auto 50px;
   padding: var(--section-gap) 1.5rem;
   text-align: center;
   color: var(--text);
@@ -926,11 +925,13 @@ body.lang-ar .hero-names {
   isolation: isolate;
 }
 
-.rsvp-section .eyebrow {
+#rsvp .eyebrow,
+#cagnotte .eyebrow {
   color: var(--blue);
 }
 
-.rsvp-section .section-title {
+#rsvp .section-title,
+#cagnotte .section-title {
   color: var(--navy);
 }
 
@@ -1066,15 +1067,19 @@ body.lang-ar .hero-names {
   }
 
   /* Sections en pleine largeur sur mobile */
-  .section,
-  .rsvp-section {
+  .section {
     width: 100%;
     padding: 2.25rem 1rem 1.9rem;
   }
 
-  .section+.section,
-  .section+.rsvp-section,
-  .rsvp-section+.rsvp-section {
+  #rsvp,
+  #cagnotte {
+    width: 100%;
+    max-width: 100%;
+    padding: 2.25rem 1rem 1.9rem;
+  }
+
+  .section+.section {
     margin-top: 100px;
   }
 
@@ -1091,8 +1096,7 @@ body.lang-ar .hero-names {
   }
 
   /* Mobile: sections slightly less transparent for better heading readability */
-  .section::before,
-  .rsvp-section::before {
+  .section::before {
     background: rgba(250, 250, 248, 0.45);
   }
 

@@ -16,7 +16,8 @@
   <div class="nav-brand">
     <button type="button" class="nav-flag-btn nav-flag-eg" data-lang="ar-EG" aria-label="Passer en arabe"></button>
     <span class="nav-logo">S&nbsp;&amp;&nbsp;M</span>
-    <button type="button" class="nav-flag-btn nav-flag-fr" data-lang="fr" aria-label="Passer en fran&ccedil;ais"></button>
+    <button type="button" class="nav-flag-btn nav-flag-fr" data-lang="fr"
+      aria-label="Passer en fran&ccedil;ais"></button>
   </div>
   <ul class="nav-links" id="nav-links-menu">
     <li><a href="#details" data-i18n="nav.details">[i18n:nav.details]</a></li>
@@ -41,7 +42,8 @@
     <p class="eyebrow" data-i18n="hero.eyebrow">[i18n:hero.eyebrow]</p>
 
     <h1 class="hero-names">
-      <span data-i18n="hero.salma">Salma</span><span class="amp">&amp;</span><span data-i18n="hero.mael">Ma&euml;l</span>
+      <span data-i18n="hero.salma">Salma</span><span class="amp">&amp;</span><span
+        data-i18n="hero.mael">Ma&euml;l</span>
     </h1>
 
     <p class="hero-date" data-i18n="hero.date">[i18n:hero.date]</p>
@@ -226,7 +228,7 @@
 </section>
 
 <!-- ── RSVP ───────────────────────────────────────────── -->
-<section id="rsvp" class="rsvp-section" aria-labelledby="rsvp-title">
+<section id="rsvp" class="section" aria-labelledby="rsvp-title">
 
   <div class="rsvp-header fade-up">
     <p class="eyebrow" data-i18n="rsvp.eyebrow">[i18n:rsvp.eyebrow]</p>
@@ -257,7 +259,7 @@
 </section>
 
 <!-- ── Cagnotte ───────────────────────────────────────── -->
-<section id="cagnotte" class="rsvp-section" aria-labelledby="cagnotte-title">
+<section id="cagnotte" class="section" aria-labelledby="cagnotte-title">
 
   <div class="rsvp-header fade-up">
     <p class="eyebrow" data-i18n="cagnotte.eyebrow">[i18n:cagnotte.eyebrow]</p>
