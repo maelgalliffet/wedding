@@ -42,7 +42,8 @@ aws s3 sync "${ROOT_DIR}" "s3://${S3_BUCKET}" \
   --exclude ".github/*" \
   --exclude ".vscode/*" \
   --exclude "terraform/*" \
-  --exclude "scripts/*" \
+  --exclude "scripts/deploy.sh" \
+  --exclude "scripts/serve-local.sh" \
   --exclude "README.md" \
   --exclude ".gitignore"
 
