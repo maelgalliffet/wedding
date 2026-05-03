@@ -24,8 +24,8 @@
     <li><a href="#programme" data-i18n="nav.program">[i18n:nav.program]</a></li>
     <li><a href="#lieu" data-i18n="nav.location">[i18n:nav.location]</a></li>
     <li><a href="#rsvp" data-i18n="nav.rsvp">[i18n:nav.rsvp]</a></li>
-    <li><a href="#wedshoots" data-i18n="nav.wedshoots">[i18n:nav.wedshoots]</a></li>
     <li><a href="#discours" data-i18n="nav.discours">[i18n:nav.discours]</a></li>
+    <li><a href="#wedshoots" data-i18n="nav.wedshoots">[i18n:nav.wedshoots]</a></li>
     <li><a href="#cagnotte" data-i18n="nav.cagnotte">[i18n:nav.cagnotte]</a></li>
   </ul>
   <div class="nav-controls">
@@ -192,6 +192,8 @@
 
   </div>
 </section>
+
+{{PROGRAM_SECTION}}
 
 <!-- ── Lieu ───────────────────────────────────────────── -->
 <section id="lieu" class="section section--location" aria-labelledby="lieu-title">
