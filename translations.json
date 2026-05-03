@@ -1034,5 +1034,159 @@
             "lang": "ar-EG",
             "text": "سلمى و ماييل — حفل الزفاف يوم ٢٠ يونيو ٢٠٢٦"
         }
+    ],
+    "nav.wedshoots": [
+        {
+            "lang": "en",
+            "text": "Photos"
+        },
+        {
+            "lang": "fr",
+            "text": "Photos"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الصور"
+        }
+    ],
+    "wedshoots.eyebrow": [
+        {
+            "lang": "en",
+            "text": "wedshoots"
+        },
+        {
+            "lang": "fr",
+            "text": "wedshoots"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "wedshoots"
+        }
+    ],
+    "wedshoots.title": [
+        {
+            "lang": "en",
+            "text": "Share your best photos!"
+        },
+        {
+            "lang": "fr",
+            "text": "Partagez vos meilleures photos !"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "شاركوا أجمل صوركم!"
+        }
+    ],
+    "wedshoots.intro": [
+        {
+            "lang": "en",
+            "text": "Copy the code below and download the Wedshoots app from the link below to publish your photos!"
+        },
+        {
+            "lang": "fr",
+            "text": "Copiez le code suivant et téléchargez l'application Wedshoots au lien ci-dessous pour publier des photos !"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "انسخوا الكود التالي وحمّلوا تطبيق Wedshoots من الرابط أدناه لنشر صوركم!"
+        }
+    ],
+    "wedshoots.codeLabel": [
+        {
+            "lang": "en",
+            "text": "Code:"
+        },
+        {
+            "lang": "fr",
+            "text": "Code :"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الكود:"
+        }
+    ],
+    "wedshoots.copyButton": [
+        {
+            "lang": "en",
+            "text": "Copy code"
+        },
+        {
+            "lang": "fr",
+            "text": "Copier le code"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "انسخ الكود"
+        }
+    ],
+    "wedshoots.copyButtonAria": [
+        {
+            "lang": "en",
+            "text": "Copy Wedshoots code"
+        },
+        {
+            "lang": "fr",
+            "text": "Copier le code Wedshoots"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "انسخ كود Wedshoots"
+        }
+    ],
+    "wedshoots.copySuccess": [
+        {
+            "lang": "en",
+            "text": "Code copied!"
+        },
+        {
+            "lang": "fr",
+            "text": "Code copié !"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تم نسخ الكود!"
+        }
+    ],
+    "wedshoots.copyError": [
+        {
+            "lang": "en",
+            "text": "Copy failed. Please copy manually."
+        },
+        {
+            "lang": "fr",
+            "text": "La copie a échoué. Veuillez copier manuellement."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "فشل النسخ. يرجى النسخ يدويًا."
+        }
+    ],
+    "wedshoots.button": [
+        {
+            "lang": "en",
+            "text": "Download Wedshoots"
+        },
+        {
+            "lang": "fr",
+            "text": "Télécharger Wedshoots"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "حمّلوا Wedshoots"
+        }
+    ],
+    "wedshoots.buttonAria": [
+        {
+            "lang": "en",
+            "text": "Share your photos on wedshoots"
+        },
+        {
+            "lang": "fr",
+            "text": "Partagez vos photos sur wedshoots"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "شاركوا صوركم على wedshoots"
+        }
     ]
 }

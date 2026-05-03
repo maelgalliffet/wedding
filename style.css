@@ -504,6 +504,11 @@ h3 {
   padding-top: calc(var(--section-gap) * 0.8);
 }
 
+/* Keep anchor targets visible below the fixed navigation bar. */
+[id] {
+  scroll-margin-top: 96px;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 0.5rem;
@@ -913,8 +918,7 @@ body.lang-ar .hero-names {
 }
 
 /* ── RSVP ────────────────────────────────────────────── */
-#rsvp,
-#cagnotte {
+.section--cta {
   width: 70%;
   max-width: var(--max-width);
   padding: var(--section-gap) 1.5rem;
@@ -925,13 +929,11 @@ body.lang-ar .hero-names {
   isolation: isolate;
 }
 
-#rsvp .eyebrow,
-#cagnotte .eyebrow {
+.section--cta .eyebrow {
   color: var(--blue);
 }
 
-#rsvp .section-title,
-#cagnotte .section-title {
+.section--cta .section-title {
   color: var(--navy);
 }
 
@@ -973,6 +975,51 @@ body.lang-ar .hero-names {
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(47, 65, 102, 0.3);
   background: #3a5078;
+}
+
+.rsvp-btn--secondary {
+  margin-bottom: 0;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  background: transparent;
+  color: var(--navy);
+  border-color: rgba(47, 65, 102, 0.3);
+  box-shadow: none;
+}
+
+.rsvp-btn--secondary:hover {
+  background: rgba(47, 65, 102, 0.08);
+  box-shadow: none;
+}
+
+.wedshoots-code-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.6rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.wedshoots-code {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.wedshoots-code-value {
+  font-family: var(--sans);
+  color: var(--navy);
+  letter-spacing: 0.04em;
+}
+
+.wedshoots-copy-feedback {
+  min-height: 1.1rem;
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  color: var(--brown);
+  letter-spacing: 0.05em;
 }
 
 /* ── Animations ──────────────────────────────────────── */
@@ -1072,8 +1119,7 @@ body.lang-ar .hero-names {
     padding: 2.25rem 1rem 1.9rem;
   }
 
-  #rsvp,
-  #cagnotte {
+  .section--mobile-full {
     width: 100%;
     max-width: 100%;
     padding: 2.25rem 1rem 1.9rem;
@@ -1081,6 +1127,10 @@ body.lang-ar .hero-names {
 
   .section+.section {
     margin-top: 100px;
+  }
+
+  [id] {
+    scroll-margin-top: 84px;
   }
 
   .section-header {

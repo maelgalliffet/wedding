@@ -54,6 +54,132 @@
     });
 })();
 
+// === Anchor navigation fix (mobile + fixed header) ===
+(function () {
+    'use strict';
+
+    function getNavOffset() {
+        var nav = document.querySelector('.nav');
+        if (!nav) return 0;
+        return Math.ceil(nav.getBoundingClientRect().height) + 12;
+    }
+
+    function resolveTarget(hash) {
+        if (!hash || hash === '#') return null;
+        var id = decodeURIComponent(hash.slice(1));
+        if (!id) return null;
+        return document.getElementById(id);
+    }
+
+    function scrollToHash(hash, shouldPushState) {
+        var target = resolveTarget(hash);
+        if (!target) return false;
+
+        var top = target.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
+        window.scrollTo({
+            top: Math.max(0, top),
+            behavior: 'smooth'
+        });
+
+        if (shouldPushState) {
+            history.pushState(null, '', hash);
+        }
+
+        return true;
+    }
+
+    document.addEventListener('click', function (event) {
+        var element = event.target;
+        if (!element || !element.closest) return;
+
+        var link = element.closest('a[href^="#"]');
+        if (!link) return;
+
+        var hash = link.getAttribute('href');
+        if (!hash || hash === '#') return;
+
+        if (!resolveTarget(hash)) return;
+
+        event.preventDefault();
+        scrollToHash(hash, true);
+    });
+
+    window.addEventListener('hashchange', function () {
+        scrollToHash(window.location.hash, false);
+    });
+
+    if (window.location.hash) {
+        // Content is injected dynamically; run after first paint and once more after layout settles.
+        requestAnimationFrame(function () {
+            scrollToHash(window.location.hash, false);
+        });
+        setTimeout(function () {
+            scrollToHash(window.location.hash, false);
+        }, 250);
+    }
+})();
+
+// === Wedshoots copy code ===
+(function () {
+    'use strict';
+    var copyBtn = document.getElementById('wedshoots-copy-btn');
+    if (!copyBtn) return;
+
+    var targetId = copyBtn.getAttribute('data-copy-target');
+    var codeEl = targetId ? document.getElementById(targetId) : null;
+    var feedbackEl = document.getElementById('wedshoots-copy-feedback');
+
+    if (!codeEl) return;
+
+    function setFeedback(message) {
+        if (!feedbackEl) return;
+        feedbackEl.textContent = message || '';
+    }
+
+    function fallbackCopy(text) {
+        var textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.setAttribute('readonly', '');
+        textArea.style.position = 'absolute';
+        textArea.style.left = '-9999px';
+        document.body.appendChild(textArea);
+        textArea.select();
+        var success = false;
+        try {
+            success = document.execCommand('copy');
+        } catch (error) {
+            success = false;
+        }
+        document.body.removeChild(textArea);
+        return success;
+    }
+
+    copyBtn.addEventListener('click', function () {
+        var code = codeEl.textContent ? codeEl.textContent.trim() : '';
+        if (!code) return;
+
+        var successMessage = feedbackEl && feedbackEl.getAttribute('data-copy-success')
+            ? feedbackEl.getAttribute('data-copy-success')
+            : 'Code copie';
+        var errorMessage = feedbackEl && feedbackEl.getAttribute('data-copy-error')
+            ? feedbackEl.getAttribute('data-copy-error')
+            : 'Copie impossible';
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(code)
+                .then(function () {
+                    setFeedback(successMessage);
+                })
+                .catch(function () {
+                    setFeedback(fallbackCopy(code) ? successMessage : errorMessage);
+                });
+            return;
+        }
+
+        setFeedback(fallbackCopy(code) ? successMessage : errorMessage);
+    });
+})();
+
 // === Global background transition ===
 (function () {
     'use strict';

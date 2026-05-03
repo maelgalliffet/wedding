@@ -24,6 +24,7 @@
     <li><a href="#programme" data-i18n="nav.program">[i18n:nav.program]</a></li>
     <li><a href="#lieu" data-i18n="nav.location">[i18n:nav.location]</a></li>
     <li><a href="#rsvp" data-i18n="nav.rsvp">[i18n:nav.rsvp]</a></li>
+    <li><a href="#wedshoots" data-i18n="nav.wedshoots">[i18n:nav.wedshoots]</a></li>
     <li><a href="#cagnotte" data-i18n="nav.cagnotte">[i18n:nav.cagnotte]</a></li>
   </ul>
   <div class="nav-controls">
@@ -228,7 +229,7 @@
 </section>
 
 <!-- ── RSVP ───────────────────────────────────────────── -->
-<section id="rsvp" class="section" aria-labelledby="rsvp-title">
+<section id="rsvp" class="section section--cta section--mobile-full" aria-labelledby="rsvp-title">
 
   <div class="rsvp-header fade-up">
     <p class="eyebrow" data-i18n="rsvp.eyebrow">[i18n:rsvp.eyebrow]</p>
@@ -258,8 +259,51 @@
 
 </section>
 
+<!-- ── wedshoots ───────────────────────────────────────── -->
+<section id="wedshoots" class="section section--cta" aria-labelledby="wedshoots-title">
+
+  <div class="rsvp-header fade-up">
+    <p class="eyebrow" data-i18n="wedshoots.eyebrow">[i18n:wedshoots.eyebrow]</p>
+    <h2 id="wedshoots-title" class="section-title" data-i18n="wedshoots.title">[i18n:wedshoots.title]</h2>
+    <div class="ornament" aria-hidden="true">
+      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+      </svg>
+      <svg viewBox="0 0 24 16" fill="currentColor">
+        <polygon points="12,2 4,14 20,14" />
+        <polygon points="12,2 10,7 14,7" fill="white" />
+      </svg>
+      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="rsvp-content fade-up">
+    <p class="rsvp-intro" data-i18n="wedshoots.intro">[i18n:wedshoots.intro]</p>
+    <div class="wedshoots-code-row">
+      <p class="wedshoots-code">
+        <span data-i18n="wedshoots.codeLabel">[i18n:wedshoots.codeLabel]</span>
+        <strong class="wedshoots-code-value" id="wedshoots-code-value">FRa6b64b55</strong>
+      </p>
+      <button type="button" class="rsvp-btn rsvp-btn--secondary" id="wedshoots-copy-btn"
+        data-copy-target="wedshoots-code-value" data-i18n-attr="aria-label:wedshoots.copyButtonAria"
+        aria-label="Copier le code Wedshoots">
+        <span data-i18n="wedshoots.copyButton">[i18n:wedshoots.copyButton]</span>
+      </button>
+    </div>
+    <p class="wedshoots-copy-feedback" id="wedshoots-copy-feedback" aria-live="polite"
+      data-i18n-attr="data-copy-success:wedshoots.copySuccess,data-copy-error:wedshoots.copyError"></p>
+    <a href="https://www.mariages.net/web/salma-and-mael/wedshoots-8" target="_blank" rel="noopener noreferrer"
+      class="rsvp-btn" aria-label="Partagez vos photos sur wedshoots" data-i18n-attr="aria-label:wedshoots.buttonAria">
+      <span data-i18n="wedshoots.button">[i18n:wedshoots.button]</span>
+    </a>
+  </div>
+
+</section>
+
 <!-- ── Cagnotte ───────────────────────────────────────── -->
-<section id="cagnotte" class="section" aria-labelledby="cagnotte-title">
+<section id="cagnotte" class="section section--cta section--mobile-full" aria-labelledby="cagnotte-title">
 
   <div class="rsvp-header fade-up">
     <p class="eyebrow" data-i18n="cagnotte.eyebrow">[i18n:cagnotte.eyebrow]</p>
