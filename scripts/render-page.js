@@ -19,8 +19,8 @@
     }
 
     Promise.all([
-        fetch('/partials/shared-content.fragment'),
-        fetch('/partials/program-' + pageName + '.fragment')
+        fetch('/partials/shared-content.fragment', { cache: 'no-cache' }),
+        fetch('/partials/program-' + pageName + '.fragment', { cache: 'no-cache' })
     ])
         .then(function (responses) {
             if (!responses[0].ok || !responses[1].ok) {

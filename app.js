@@ -368,7 +368,7 @@
     // Load translations from external JSON file
     var translationsUrl = '/translations.json';
 
-    fetch(translationsUrl)
+    fetch(translationsUrl, { cache: 'no-cache' })
         .then(function (response) {
             if (!response.ok) throw new Error('Failed to load translations.json');
             return response.json();
