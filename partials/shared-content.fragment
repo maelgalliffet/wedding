@@ -25,6 +25,7 @@
     <li><a href="#lieu" data-i18n="nav.location">[i18n:nav.location]</a></li>
     <li><a href="#rsvp" data-i18n="nav.rsvp">[i18n:nav.rsvp]</a></li>
     <li><a href="#wedshoots" data-i18n="nav.wedshoots">[i18n:nav.wedshoots]</a></li>
+    <li><a href="#discours" data-i18n="nav.discours">[i18n:nav.discours]</a></li>
     <li><a href="#cagnotte" data-i18n="nav.cagnotte">[i18n:nav.cagnotte]</a></li>
   </ul>
   <div class="nav-controls">
@@ -192,15 +193,13 @@
   </div>
 </section>
 
-{{PROGRAM_SECTION}}
-
 <!-- ── Lieu ───────────────────────────────────────────── -->
 <section id="lieu" class="section section--location" aria-labelledby="lieu-title">
   <div class="location-block">
 
     <div class="location-header-card fade-up">
       <p class="eyebrow" data-i18n="location.eyebrow">[i18n:location.eyebrow]</p>
-      <h2 id="lieu-title" class="location-title" data-i18n-html="location.title">[i18n:location.title]</h2>
+      <h2 id="lieu-title" class="section-title" data-i18n-html="location.title">[i18n:location.title]</h2>
       <div class="ornament" aria-hidden="true">
         <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
           <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
@@ -259,10 +258,35 @@
 
 </section>
 
+<!-- ── Discours ───────────────────────────────────────── -->
+<section id="discours" class="section" aria-labelledby="discours-title">
+  <div class="section-header fade-up">
+    <p class="eyebrow" data-i18n="discours.eyebrow">[i18n:discours.eyebrow]</p>
+    <h2 id="discours-title" class="section-title" data-i18n="discours.title">[i18n:discours.title]</h2>
+    <div class="ornament" aria-hidden="true">
+      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+      </svg>
+      <svg viewBox="0 0 24 16" fill="currentColor">
+        <polygon points="12,2 4,14 20,14" />
+        <polygon points="12,2 10,7 14,7" fill="white" />
+      </svg>
+      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
+      </svg>
+    </div>
+    <a href="https://drive.google.com/drive/folders/1tE-22Xr-u7I2udwKSTwtarpdh22Qwl-h?usp=sharing" target="_blank"
+      rel="noopener noreferrer" class="rsvp-btn" aria-label="Accédez aux discours"
+      data-i18n-attr="aria-label:discours.buttonAria">
+      <span data-i18n="discours.button">[i18n:discours.button]</span>
+    </a>
+  </div>
+</section>
+
 <!-- ── wedshoots ───────────────────────────────────────── -->
 <section id="wedshoots" class="section section--cta" aria-labelledby="wedshoots-title">
 
-  <div class="rsvp-header fade-up">
+  <div class="section-header fade-up">
     <p class="eyebrow" data-i18n="wedshoots.eyebrow">[i18n:wedshoots.eyebrow]</p>
     <h2 id="wedshoots-title" class="section-title" data-i18n="wedshoots.title">[i18n:wedshoots.title]</h2>
     <div class="ornament" aria-hidden="true">

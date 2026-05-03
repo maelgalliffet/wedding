@@ -1074,13 +1074,13 @@
         },
         {
             "lang": "ar-EG",
-            "text": "شاركوا أجمل صوركم!"
+            "text": "شاركوا أجمل صوركم"
         }
     ],
     "wedshoots.intro": [
         {
             "lang": "en",
-            "text": "Copy the code below and download the Wedshoots app from the link below to publish your photos!"
+            "text": "Copy the code and download the Wedshoots app from the link below to publish your photos!"
         },
         {
             "lang": "fr",
@@ -1088,7 +1088,7 @@
         },
         {
             "lang": "ar-EG",
-            "text": "انسخوا الكود التالي وحمّلوا تطبيق Wedshoots من الرابط أدناه لنشر صوركم!"
+            "text": "انسخوا الكود التالي وحمّلوا تطبيق Wedshoots من الرابط في الأسفل لنشر صوركم!"
         }
     ],
     "wedshoots.codeLabel": [
@@ -1187,6 +1187,76 @@
         {
             "lang": "ar-EG",
             "text": "شاركوا صوركم على wedshoots"
+        }
+    ],
+    "nav.discours": [
+        {
+            "lang": "en",
+            "text": "Speeches"
+        },
+        {
+            "lang": "fr",
+            "text": "Discours"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الخطب"
+        }
+    ],
+    "discours.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Speeches"
+        },
+        {
+            "lang": "fr",
+            "text": "Discours"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الخطب"
+        }
+    ],
+    "discours.title": [
+        {
+            "lang": "en",
+            "text": "Follow the ceremony in all languages!"
+        },
+        {
+            "lang": "fr",
+            "text": "Suivez la cérémonie dans toutes les langues !"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تابعوا مراسم الزفاف بجميع اللغات!"
+        }
+    ],
+    "discours.buttonAria": [
+        {
+            "lang": "en",
+            "text": "Follow the ceremony speeches on the discours app"
+        },
+        {
+            "lang": "fr",
+            "text": "Suivez les discours de la cérémonie sur l'application discours"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تابعوا خطب المراسم على تطبيق discours"
+        }
+    ],
+    "discours.button": [
+        {
+            "lang": "en",
+            "text": "Access speeches"
+        },
+        {
+            "lang": "fr",
+            "text": "Accéder aux discours"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الوصول إلى الخطب"
         }
     ]
 }
