@@ -47,6 +47,26 @@ aws s3 sync "${ROOT_DIR}" "s3://${S3_BUCKET}" \
   --exclude "README.md" \
   --exclude ".gitignore"
 
+echo "Forçage du Cache-Control sur les fichiers dynamiques..."
+aws s3 cp "s3://${S3_BUCKET}/translations.json" "s3://${S3_BUCKET}/translations.json" \
+  --region "${AWS_REGION}" \
+  --metadata-directive REPLACE \
+  --cache-control "no-cache, no-store" \
+  --content-type "application/json"
+
+for fragment in app.js scripts/render-page.js partials/shared-content.fragment partials/program-main.fragment partials/program-guests.fragment; do
+  ext="${fragment##*.}"
+  case "${ext}" in
+    js)   content_type="application/javascript" ;;
+    *)    content_type="text/plain" ;;
+  esac
+  aws s3 cp "s3://${S3_BUCKET}/${fragment}" "s3://${S3_BUCKET}/${fragment}" \
+    --region "${AWS_REGION}" \
+    --metadata-directive REPLACE \
+    --cache-control "no-cache, no-store" \
+    --content-type "${content_type}"
+done
+
 if [[ -n "${CLOUDFRONT_DISTRIBUTION_ID}" ]]; then
   echo "Invalidation CloudFront: ${CLOUDFRONT_DISTRIBUTION_ID}"
   aws cloudfront create-invalidation \

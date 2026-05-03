@@ -127,6 +127,7 @@ function handler(event) {
   var uri = request.uri;
   var mainInvitePath = '/faire-part-mariage/20062026';
   var guestsInvitePath = '/faire-part-vin-d-honneur/20062026';
+  var qrCodeRedirectTarget = '/faire-part-mariage/20062026';
 
   function deny() {
     return {
@@ -161,6 +162,17 @@ function handler(event) {
     }
 
     return false;
+  }
+
+  if (uri === '/qr-code') {
+    return {
+      statusCode: 301,
+      statusDescription: 'Moved Permanently',
+      headers: {
+        location: { value: qrCodeRedirectTarget },
+        'cache-control': { value: 'no-store' }
+      }
+    };
   }
 
   if (uri === mainInvitePath) {
