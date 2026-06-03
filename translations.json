@@ -741,6 +741,48 @@
             "text": "والاحتفال مستمر حتى الفجر."
         }
     ],
+    "program.item5.time": [
+        {
+            "lang": "en",
+            "text": "Sunday 11:00 AM - 3:00 PM"
+        },
+        {
+            "lang": "fr",
+            "text": "Dimanche 11h00 - 15h00"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الأحد ١١:٠٠ صباحًا - ٣:٠٠ مساءً"
+        }
+    ],
+    "program.item5.label": [
+        {
+            "lang": "en",
+            "text": "Brunch"
+        },
+        {
+            "lang": "fr",
+            "text": "Brunch"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "برنش"
+        }
+    ],
+    "program.item5.desc": [
+        {
+            "lang": "en",
+            "text": "Next-day brunch, in the Nivolet room of the château."
+        },
+        {
+            "lang": "fr",
+            "text": "Brunch du lendemain, dans la salle Nivolet du château."
+        },
+        {
+            "lang": "ar-EG",
+            "text": "غداء برنش في اليوم التالي، في قاعة نيفوليه بالقصر."
+        }
+    ],
     "location.eyebrow": [
         {
             "lang": "en",

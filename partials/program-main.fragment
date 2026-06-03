@@ -43,5 +43,11 @@
       <p class="timeline-desc" data-i18n="program.item4.desc">[i18n:program.item4.desc]</p>
     </div>
 
+    <div class="timeline-item" role="listitem">
+      <p class="timeline-time" data-i18n="program.item5.time">[i18n:program.item5.time]</p>
+      <p class="timeline-label" data-i18n="program.item5.label">[i18n:program.item5.label]</p>
+      <p class="timeline-desc" data-i18n="program.item5.desc">[i18n:program.item5.desc]</p>
+    </div>
+
   </div>
 </section>
