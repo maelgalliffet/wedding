@@ -702,15 +702,15 @@
     "program.item4.time": [
         {
             "lang": "en",
-            "text": "11:00 PM - 4:00 AM"
+            "text": "11:30 PM - 4:00 AM"
         },
         {
             "lang": "fr",
-            "text": "23h00 - 04h00"
+            "text": "23h30 - 04h00"
         },
         {
             "lang": "ar-EG",
-            "text": "١١:٠٠ مساءً - ٤:٠٠ صباحًا"
+            "text": "١١:٣٠ مساءً - ٤:٠٠ صباحًا"
         }
     ],
     "program.item4.label": [

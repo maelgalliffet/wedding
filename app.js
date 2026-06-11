@@ -277,7 +277,7 @@
             var vinDhonneurTime = document.querySelector('[data-i18n="program.item2.time"]');
             var endTimeByLang = {
                 'fr': '19h',
-                'en': '7:00 PM',
+                'en': '7:30 PM',
                 'ar-EG': '19h'
             };
 
@@ -296,9 +296,9 @@
         if (isGuestsPage) {
             var vinDhonneurTime = document.querySelector('[data-i18n="program.item2.time"]');
             var endTimeByLang = {
-                'fr': '19h',
-                'en': '7:00 PM',
-                'ar-EG': '19h'
+                'fr': '19h30',
+                'en': '7:30 PM',
+                'ar-EG': '٧:٣٠ مساءً'
             };
 
             if (vinDhonneurTime) {
