@@ -310,7 +310,7 @@
     <div class="wedshoots-code-row">
       <p class="wedshoots-code">
         <span data-i18n="wedshoots.codeLabel">[i18n:wedshoots.codeLabel]</span>
-        <strong class="wedshoots-code-value" id="wedshoots-code-value">FRa6b64b55</strong>
+        <strong class="wedshoots-code-value" id="wedshoots-code-value">FR495d6a8c</strong>
       </p>
       <button type="button" class="rsvp-btn rsvp-btn--secondary" id="wedshoots-copy-btn"
         data-copy-target="wedshoots-code-value" data-i18n-attr="aria-label:wedshoots.copyButtonAria"
@@ -320,7 +320,7 @@
     </div>
     <p class="wedshoots-copy-feedback" id="wedshoots-copy-feedback" aria-live="polite"
       data-i18n-attr="data-copy-success:wedshoots.copySuccess,data-copy-error:wedshoots.copyError"></p>
-    <a href="https://www.mariages.net/web/salma-and-mael/wedshoots-8" target="_blank" rel="noopener noreferrer"
+    <a href="https://www.wedshoots.com/fr/download?albumId=FR495d6a8c" target="_blank" rel="noopener noreferrer"
       class="rsvp-btn" aria-label="Partagez vos photos sur wedshoots" data-i18n-attr="aria-label:wedshoots.buttonAria">
       <span data-i18n="wedshoots.button">[i18n:wedshoots.button]</span>
     </a>
