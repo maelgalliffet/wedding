@@ -160,6 +160,10 @@ function handler(event) {
       return true;
     }
 
+    if (path.indexOf('/videos/') === 0) {
+      return true;
+    }
+
     return false;
   }
 

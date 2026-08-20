@@ -4,6 +4,11 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TF_DIR="${ROOT_DIR}/terraform"
 AWS_REGION="eu-west-3"
+IS_CI="false"
+
+if [[ "${CI:-}" == "true" || "${GITHUB_ACTIONS:-}" == "true" ]]; then
+  IS_CI="true"
+fi
 
 if ! command -v aws >/dev/null 2>&1; then
   echo "Erreur: AWS CLI introuvable." >&2
@@ -12,11 +17,6 @@ fi
 
 if ! command -v terraform >/dev/null 2>&1; then
   echo "Erreur: Terraform CLI introuvable." >&2
-  exit 1
-fi
-
-if [[ -z "${AWS_ACCESS_KEY_ID:-}" || -z "${AWS_SECRET_ACCESS_KEY:-}" ]]; then
-  echo "Erreur: AWS_ACCESS_KEY_ID et AWS_SECRET_ACCESS_KEY sont requis." >&2
   exit 1
 fi
 
@@ -35,17 +35,34 @@ CLOUDFRONT_DISTRIBUTION_ID="$(terraform -chdir="${TF_DIR}" output -raw cloudfron
 
 echo "Déploiement vers s3://${S3_BUCKET} (region: ${AWS_REGION})"
 
-aws s3 sync "${ROOT_DIR}" "s3://${S3_BUCKET}" \
-  --region "${AWS_REGION}" \
-  --delete \
-  --exclude ".git/*" \
-  --exclude ".github/*" \
-  --exclude ".vscode/*" \
-  --exclude "terraform/*" \
-  --exclude "scripts/deploy.sh" \
-  --exclude "scripts/serve-local.sh" \
-  --exclude "README.md" \
-  --exclude ".gitignore"
+if [[ "${IS_CI}" == "true" ]]; then
+  echo "Mode CI: synchronisation complète (avec --delete), sans toucher au dossier videos/."
+  aws s3 sync "${ROOT_DIR}" "s3://${S3_BUCKET}" \
+    --region "${AWS_REGION}" \
+    --delete \
+    --exclude "videos/*" \
+    --exclude ".git/*" \
+    --exclude ".github/*" \
+    --exclude ".vscode/*" \
+    --exclude "terraform/*" \
+    --exclude "scripts/deploy.sh" \
+    --exclude "scripts/serve-local.sh" \
+    --exclude "README.md" \
+    --exclude ".gitignore"
+else
+  echo "Mode Local: synchronisation complète (avec --delete)"
+  aws s3 sync "${ROOT_DIR}" "s3://${S3_BUCKET}" \
+    --region "${AWS_REGION}" \
+    --delete \
+    --exclude ".git/*" \
+    --exclude ".github/*" \
+    --exclude ".vscode/*" \
+    --exclude "terraform/*" \
+    --exclude "scripts/deploy.sh" \
+    --exclude "scripts/serve-local.sh" \
+    --exclude "README.md" \
+    --exclude ".gitignore"
+fi
 
 echo "Forçage du Cache-Control sur les fichiers dynamiques..."
 aws s3 cp "s3://${S3_BUCKET}/translations.json" "s3://${S3_BUCKET}/translations.json" \
@@ -69,9 +86,13 @@ done
 
 if [[ -n "${CLOUDFRONT_DISTRIBUTION_ID}" ]]; then
   echo "Invalidation CloudFront: ${CLOUDFRONT_DISTRIBUTION_ID}"
+  invalidation_paths="/*"
+  if [[ "${IS_CI}" != "true" ]]; then
+    invalidation_paths="/videos/*"
+  fi
   aws cloudfront create-invalidation \
     --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
-    --paths "/*" \
+    --paths "${invalidation_paths}" \
     --region "${AWS_REGION}" >/dev/null
 else
   echo "CLOUDFRONT_DISTRIBUTION_ID non défini: invalidation CloudFront ignorée."
