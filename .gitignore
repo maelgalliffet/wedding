@@ -5,3 +5,6 @@
 
 # Backend local config (may contain sensitive values)
 terraform/backend.hcl
+
+# Heavy files
+videos

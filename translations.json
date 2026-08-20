@@ -41,6 +41,34 @@
             "text": "البرنامج"
         }
     ],
+    "nav.video": [
+        {
+            "lang": "en",
+            "text": "Videos"
+        },
+        {
+            "lang": "fr",
+            "text": "Vidéos"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الفيديوهات"
+        }
+    ],
+    "nav.albums": [
+        {
+            "lang": "en",
+            "text": "Photos"
+        },
+        {
+            "lang": "fr",
+            "text": "Photos"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الصور"
+        }
+    ],
     "nav.location": [
         {
             "lang": "en",
@@ -1075,6 +1103,90 @@
         {
             "lang": "ar-EG",
             "text": "سلمى و ماييل — حفل الزفاف يوم ٢٠ يونيو ٢٠٢٦"
+        }
+    ],
+    "albums.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Photos"
+        },
+        {
+            "lang": "fr",
+            "text": "Photos"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الصور"
+        }
+    ],
+    "albums.title": [
+        {
+            "lang": "en",
+            "text": "Photos"
+        },
+        {
+            "lang": "fr",
+            "text": "Photos"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الصور"
+        }
+    ],
+    "video.eyebrow": [
+        {
+            "lang": "en",
+            "text": "Videos"
+        },
+        {
+            "lang": "fr",
+            "text": "Vidéos"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "الفيديوهات"
+        }
+    ],
+    "video.title": [
+        {
+            "lang": "en",
+            "text": "Our love story in motion"
+        },
+        {
+            "lang": "fr",
+            "text": "Notre histoire en mouvement"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "قصة حبنا في الحركة"
+        }
+    ],
+    "video.teaser.title": [
+        {
+            "lang": "en",
+            "text": "Teaser"
+        },
+        {
+            "lang": "fr",
+            "text": "Teaser"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "تيزر"
+        }
+    ],
+    "video.film.title": [
+        {
+            "lang": "en",
+            "text": "Wedding film"
+        },
+        {
+            "lang": "fr",
+            "text": "Film du mariage"
+        },
+        {
+            "lang": "ar-EG",
+            "text": "فيلم الزفاف"
         }
     ],
     "nav.wedshoots": [

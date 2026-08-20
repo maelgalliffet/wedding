@@ -23,10 +23,9 @@
     <li><a href="#details" data-i18n="nav.details">[i18n:nav.details]</a></li>
     <li><a href="#programme" data-i18n="nav.program">[i18n:nav.program]</a></li>
     <li><a href="#lieu" data-i18n="nav.location">[i18n:nav.location]</a></li>
-    <li><a href="#rsvp" data-i18n="nav.rsvp">[i18n:nav.rsvp]</a></li>
     <li><a href="#discours" data-i18n="nav.discours">[i18n:nav.discours]</a></li>
-    <li><a href="#wedshoots" data-i18n="nav.wedshoots">[i18n:nav.wedshoots]</a></li>
-    <li><a href="#cagnotte" data-i18n="nav.cagnotte">[i18n:nav.cagnotte]</a></li>
+    <li><a href="#photos" data-i18n="nav.albums">[i18n:nav.albums]</a></li>
+    <li><a href="#video" data-i18n="nav.video">[i18n:nav.video]</a></li>
   </ul>
   <div class="nav-controls">
     <label for="lang-switcher" class="visually-hidden" data-i18n="lang.label">[i18n:lang.label]</label>
@@ -80,8 +79,10 @@
 <!-- ── Details ───────────────────────────────────────── -->
 <section id="details" class="section" aria-labelledby="details-title">
   <div class="section-header fade-up">
-    <p class="eyebrow" data-i18n="details.eyebrow">[i18n:details.eyebrow]</p>
-    <h2 id="details-title" class="section-title" data-i18n="details.title">[i18n:details.title]</h2>
+    <p class="eyebrow"><a href="#details" class="section-title-link"
+        data-i18n="details.eyebrow">[i18n:details.eyebrow]</a></p>
+    <h2 id="details-title" class="section-title"><a href="#details" class="section-title-link"
+        data-i18n="details.title">[i18n:details.title]</a></h2>
     <div class="ornament" aria-hidden="true">
       <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
         <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
@@ -200,8 +201,10 @@
   <div class="location-block">
 
     <div class="location-header-card fade-up">
-      <p class="eyebrow" data-i18n="location.eyebrow">[i18n:location.eyebrow]</p>
-      <h2 id="lieu-title" class="section-title" data-i18n-html="location.title">[i18n:location.title]</h2>
+      <p class="eyebrow"><a href="#lieu" class="section-title-link"
+          data-i18n="location.eyebrow">[i18n:location.eyebrow]</a></p>
+      <h2 id="lieu-title" class="section-title"><a href="#lieu" class="section-title-link"
+          data-i18n-html="location.title">[i18n:location.title]</a></h2>
       <div class="ornament" aria-hidden="true">
         <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
           <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
@@ -229,42 +232,13 @@
   </div>
 </section>
 
-<!-- ── RSVP ───────────────────────────────────────────── -->
-<section id="rsvp" class="section section--cta section--mobile-full" aria-labelledby="rsvp-title">
-
-  <div class="rsvp-header fade-up">
-    <p class="eyebrow" data-i18n="rsvp.eyebrow">[i18n:rsvp.eyebrow]</p>
-    <h2 id="rsvp-title" class="section-title" data-i18n="rsvp.title">[i18n:rsvp.title]</h2>
-    <div class="ornament" aria-hidden="true">
-      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
-      </svg>
-      <svg viewBox="0 0 24 16" fill="currentColor">
-        <polygon points="12,2 4,14 20,14" />
-        <polygon points="12,2 10,7 14,7" fill="white" />
-      </svg>
-      <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-        <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
-      </svg>
-    </div>
-  </div>
-
-  <div class="rsvp-content fade-up">
-    <p class="rsvp-intro" data-i18n-html="rsvp.intro">[i18n:rsvp.intro]</p>
-    <a href="https://forms.gle/Nprychy3yCCdcuF78" target="_blank" rel="noopener noreferrer" class="rsvp-btn"
-      aria-label="Confirmer ma pr&eacute;sence via le formulaire en ligne" data-i18n-attr="aria-label:rsvp.buttonAria">
-      <span data-i18n="rsvp.button">[i18n:rsvp.button]</span>
-    </a>
-    <p class="rsvp-date" data-i18n="rsvp.deadline">[i18n:rsvp.deadline]</p>
-  </div>
-
-</section>
-
 <!-- ── Discours ───────────────────────────────────────── -->
 <section id="discours" class="section" aria-labelledby="discours-title">
   <div class="section-header fade-up">
-    <p class="eyebrow" data-i18n="discours.eyebrow">[i18n:discours.eyebrow]</p>
-    <h2 id="discours-title" class="section-title" data-i18n="discours.title">[i18n:discours.title]</h2>
+    <p class="eyebrow"><a href="#discours" class="section-title-link"
+        data-i18n="discours.eyebrow">[i18n:discours.eyebrow]</a></p>
+    <h2 id="discours-title" class="section-title"><a href="#discours" class="section-title-link"
+        data-i18n="discours.title">[i18n:discours.title]</a></h2>
     <div class="ornament" aria-hidden="true">
       <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
         <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
@@ -285,12 +259,13 @@
   </div>
 </section>
 
-<!-- ── wedshoots ───────────────────────────────────────── -->
-<section id="wedshoots" class="section section--cta" aria-labelledby="wedshoots-title">
-
+<!-- ── Albums photos ─────────────────────────────────── -->
+<section id="photos" class="section section--cta" aria-labelledby="photos-title">
   <div class="section-header fade-up">
-    <p class="eyebrow" data-i18n="wedshoots.eyebrow">[i18n:wedshoots.eyebrow]</p>
-    <h2 id="wedshoots-title" class="section-title" data-i18n="wedshoots.title">[i18n:wedshoots.title]</h2>
+    <p class="eyebrow"><a href="#photos" class="section-title-link" data-i18n="albums.eyebrow">[i18n:albums.eyebrow]</a>
+    </p>
+    <h2 id="photos-title" class="section-title"><a href="#photos" class="section-title-link"
+        data-i18n="albums.title">[i18n:albums.title]</a></h2>
     <div class="ornament" aria-hidden="true">
       <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
         <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
@@ -305,35 +280,33 @@
     </div>
   </div>
 
-  <div class="rsvp-content fade-up">
-    <p class="rsvp-intro" data-i18n="wedshoots.intro">[i18n:wedshoots.intro]</p>
-    <div class="wedshoots-code-row">
-      <p class="wedshoots-code">
-        <span data-i18n="wedshoots.codeLabel">[i18n:wedshoots.codeLabel]</span>
-        <strong class="wedshoots-code-value" id="wedshoots-code-value">FR495d6a8c</strong>
-      </p>
-      <button type="button" class="rsvp-btn rsvp-btn--secondary" id="wedshoots-copy-btn"
-        data-copy-target="wedshoots-code-value" data-i18n-attr="aria-label:wedshoots.copyButtonAria"
-        aria-label="Copier le code Wedshoots">
-        <span data-i18n="wedshoots.copyButton">[i18n:wedshoots.copyButton]</span>
-      </button>
-    </div>
-    <p class="wedshoots-copy-feedback" id="wedshoots-copy-feedback" aria-live="polite"
-      data-i18n-attr="data-copy-success:wedshoots.copySuccess,data-copy-error:wedshoots.copyError"></p>
+  <div class="rsvp-content photos-grid fade-up">
     <a href="https://www.wedshoots.com/fr/download?albumId=FR495d6a8c" target="_blank" rel="noopener noreferrer"
-      class="rsvp-btn" aria-label="Partagez vos photos sur wedshoots" data-i18n-attr="aria-label:wedshoots.buttonAria">
-      <span data-i18n="wedshoots.button">[i18n:wedshoots.button]</span>
+      class="rsvp-btn rsvp-btn--secondary" aria-label="Accéder au album Wedshoots">
+      <span>Wedshoots</span>
+    </a>
+    <a href="https://photos.app.goo.gl/yhrhWo21g6Aw2A8T7" target="_blank" rel="noopener noreferrer"
+      class="rsvp-btn rsvp-btn--secondary" aria-label="Accéder à l'album photo mairie">
+      <span>Album photo mairie</span>
+    </a>
+    <a href="https://photos.app.goo.gl/vGRhrGo42UTapDd17" target="_blank" rel="noopener noreferrer"
+      class="rsvp-btn rsvp-btn--secondary" aria-label="Accéder à l'album photomaton">
+      <span>Album photomaton</span>
+    </a>
+    <a href="https://photos.app.goo.gl/x62P9MuofXKKf3PDA" target="_blank" rel="noopener noreferrer"
+      class="rsvp-btn rsvp-btn--secondary" aria-label="Accéder à l'album des photos du mariage">
+      <span>Album photos du mariage</span>
     </a>
   </div>
-
 </section>
 
-<!-- ── Cagnotte ───────────────────────────────────────── -->
-<section id="cagnotte" class="section section--cta section--mobile-full" aria-labelledby="cagnotte-title">
-
-  <div class="rsvp-header fade-up">
-    <p class="eyebrow" data-i18n="cagnotte.eyebrow">[i18n:cagnotte.eyebrow]</p>
-    <h2 id="cagnotte-title" class="section-title" data-i18n="cagnotte.title">[i18n:cagnotte.title]</h2>
+<!-- ── Vidéos du mariage ──────────────────────────────── -->
+<section id="video" class="section section--video" aria-labelledby="video-title">
+  <div class="section-header fade-up">
+    <p class="eyebrow"><a href="#video" class="section-title-link" data-i18n="video.eyebrow">[i18n:video.eyebrow]</a>
+    </p>
+    <h2 id="video-title" class="section-title"><a href="#video" class="section-title-link"
+        data-i18n="video.title">[i18n:video.title]</a></h2>
     <div class="ornament" aria-hidden="true">
       <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
         <path d="M2,8 C6,2 10,2 12,8 C14,14 18,14 22,8" />
@@ -348,13 +321,29 @@
     </div>
   </div>
 
-  <div class="rsvp-content fade-up">
-    <p class="rsvp-intro" data-i18n-html="cagnotte.intro">[i18n:cagnotte.intro]</p>
-    <a href="https://www.onparticipe.fr/c/iWkIcYMH" target="_blank" rel="noopener noreferrer" class="rsvp-btn"
-      aria-label="Acceder a notre cagnotte OnParticipe" data-i18n-attr="aria-label:cagnotte.buttonAria">
-      <span data-i18n="cagnotte.button">[i18n:cagnotte.button]</span>
-    </a>
-    <p class="rsvp-date" data-i18n="cagnotte.deadline">[i18n:cagnotte.deadline]</p>
-  </div>
+  <div class="videos-grid fade-up">
 
+    <div class="video-item">
+      <h3 class="video-item-title" data-i18n="video.teaser.title">[i18n:video.teaser.title]</h3>
+      <div class="video-wrap">
+        <video class="video-player" controls playsinline preload="metadata"
+          aria-label="Teaser du mariage de Salma et Maël">
+          <source src="/videos/SalmaMael-WeddingTeaser-EndlessPhotoFilm.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <h3 class="video-item-title" data-i18n="video.film.title">[i18n:video.film.title]</h3>
+      <div class="video-wrap">
+        <video class="video-player" controls playsinline preload="metadata"
+          aria-label="Film du mariage de Salma et Maël">
+          <source src="/videos/SalmaMael-WeddingFilm-EndlessPhotoFilm.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+        </video>
+      </div>
+    </div>
+
+  </div>
 </section>
